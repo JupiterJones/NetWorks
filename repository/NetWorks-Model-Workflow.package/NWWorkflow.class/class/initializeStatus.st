@@ -15,6 +15,11 @@ initializeStatus
     comment:
         'Once a work order has a date attached to it, the work order and job stats becomes "Scheduled"';
     yourself.
+  started := self new
+    title: 'Started';
+    comment:
+        'Once a contractor starts work on a work order, the work order and job stats becomes "Started"';
+    yourself.
   completed := self new
     title: 'Completed';
     comment:
@@ -35,11 +40,14 @@ initializeStatus
     next: scheduled;
     previous: unscheduled.
   scheduled
-    next: completed;
+    next: started;
     previous: assigned.
+  started
+    next: completed;
+    previous: scheduled.
   completed
     next: invoiced;
-    previous: scheduled.
+    previous: started.
   invoiced
     next: closed;
     previous: completed.

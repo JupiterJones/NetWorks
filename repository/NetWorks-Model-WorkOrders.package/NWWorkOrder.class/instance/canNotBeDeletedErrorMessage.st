@@ -1,5 +1,5 @@
 magritte hooks
-canNotBeRemovedErrorMessage
+canNotBeDeletedErrorMessage
   ^ String
     streamContents: [ :stream | 
       stream
