@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Tests-Model-WorkOrders",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWWorkOrderTests",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractTestCase",
+	"type" : "normal" }

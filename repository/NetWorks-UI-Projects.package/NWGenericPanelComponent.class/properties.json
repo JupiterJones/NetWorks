@@ -1,0 +1,26 @@
+{
+	"category" : "NetWorks-UI-Projects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"icon",
+		"title",
+		"hasSearch",
+		"wrapperClass",
+		"rowClass",
+		"searchText",
+		"filters",
+		"items",
+		"displayItems",
+		"reportColumns",
+		"announcer",
+		"dragScopeSelectors",
+		"dropScope" ],
+	"name" : "NWGenericPanelComponent",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractComponent",
+	"type" : "normal" }

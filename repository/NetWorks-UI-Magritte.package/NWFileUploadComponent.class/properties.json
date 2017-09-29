@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWFileUploadComponent",
+	"pools" : [
+		 ],
+	"super" : "MAFileUploadComponent",
+	"type" : "normal" }

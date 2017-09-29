@@ -1,0 +1,15 @@
+{
+	"category" : "NetWorks-Model-Workflow",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"initialStatus" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"next",
+		"previous" ],
+	"name" : "NWWorkflow",
+	"pools" : [
+		 ],
+	"super" : "NWObjectWithTitleAndComment",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "NetWorks-UI-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"announcer",
+		"user",
+		"model" ],
+	"name" : "NWSession",
+	"pools" : [
+		 ],
+	"super" : "WASession",
+	"type" : "normal" }

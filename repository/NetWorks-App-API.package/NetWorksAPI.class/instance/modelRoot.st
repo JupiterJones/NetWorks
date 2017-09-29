@@ -1,0 +1,3 @@
+accessing
+modelRoot
+  ^ NWModelRoot instance

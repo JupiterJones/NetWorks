@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Model-Admin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 04/09/2017 21:58",
+	"instvars" : [
+		 ],
+	"name" : "NWContractorPermission",
+	"pools" : [
+		 ],
+	"super" : "NWPermission",
+	"type" : "normal" }

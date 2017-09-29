@@ -1,0 +1,3 @@
+testing
+allowsAccessTo: aResource
+  ^ false

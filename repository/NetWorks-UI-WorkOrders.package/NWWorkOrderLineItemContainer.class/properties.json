@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-WorkOrders",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 07/25/2017 18:10",
+	"instvars" : [
+		 ],
+	"name" : "NWWorkOrderLineItemContainer",
+	"pools" : [
+		 ],
+	"super" : "NWContainer",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Model-Organisation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"organisation" ],
+	"name" : "NWClient",
+	"pools" : [
+		 ],
+	"super" : "NWObjectWithTitleAndComment",
+	"type" : "normal" }

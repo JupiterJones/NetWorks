@@ -1,0 +1,25 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"announcer" : "DataCurator 04/04/2017 03:02",
+		"buildWorkOrderComponentFor:" : "jupiter 04/11/2017 00:52",
+		"calendarEventsFromStartDate:to:" : "DataCurator 04/04/2017 03:02",
+		"changedEventProperties" : "DataCurator 04/04/2017 03:02",
+		"eventEditor" : "DataCurator 04/04/2017 03:02",
+		"eventEditor:" : "DataCurator 04/04/2017 03:02",
+		"events" : "DataCurator 04/04/2017 03:02",
+		"events:" : "DataCurator 04/04/2017 03:02",
+		"header" : "DataCurator 04/04/2017 03:02",
+		"initialize" : "DataCurator 04/04/2017 03:02",
+		"renderCalendar:" : "jupiter 04/11/2017 00:51",
+		"renderContentOn:" : "jupiter 04/04/2017 04:37",
+		"renderEventEditorDialog:" : "DataCurator 04/04/2017 03:02",
+		"setEventToCreate:" : "DataCurator 04/04/2017 03:02",
+		"setEventToEdit:" : "jupiter 04/11/2017 00:48",
+		"subscribe:do:for:" : "DataCurator 04/04/2017 03:02",
+		"updateEventColorsScript:" : "DataCurator 04/04/2017 03:02",
+		"updateEventEnd:" : "DataCurator 04/04/2017 03:02",
+		"updateEventStart:" : "DataCurator 04/04/2017 03:02",
+		"viewUserClasses" : "DataCurator 04/04/2017 03:02",
+		"workOrderComponent" : "jupiter 04/11/2017 00:48" } }

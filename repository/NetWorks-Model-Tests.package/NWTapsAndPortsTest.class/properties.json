@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Model-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"taps" ],
+	"name" : "NWTapsAndPortsTest",
+	"pools" : [
+		 ],
+	"super" : "NWTest",
+	"type" : "normal" }

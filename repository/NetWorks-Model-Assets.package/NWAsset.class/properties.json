@@ -1,0 +1,18 @@
+{
+	"category" : "NetWorks-Model-Assets",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"parent",
+		"latitude",
+		"longitude",
+		"address",
+		"assets" ],
+	"name" : "NWAsset",
+	"pools" : [
+		 ],
+	"super" : "NWObjectWithTitleAndComment",
+	"type" : "normal" }

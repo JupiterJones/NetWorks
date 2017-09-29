@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Model-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workOrderLineItem" ],
+	"name" : "NWTest",
+	"pools" : [
+		 ],
+	"super" : "NWObjectWithTitleAndComment",
+	"type" : "normal" }

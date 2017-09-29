@@ -1,0 +1,25 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"canBeDeleted" : "jupiter 04/07/2017 23:25",
+		"canNotBeDeletedErrorMessage" : "jupiter 04/07/2017 23:26",
+		"changeUriFrom:to:" : "jupiter 04/07/2017 00:39",
+		"cleanUpAfterDelete" : "jupiter 04/08/2017 00:52",
+		"client" : "jupiter 03/05/2017 20:01",
+		"client:" : "jupiter 03/05/2017 20:04",
+		"clientDescription" : "jupiter 04/08/2017 03:38",
+		"clientTitleDescription" : "jupiter 03/24/2017 20:06",
+		"descriptionContainer" : "jupiter 04/05/2017 16:24",
+		"fileDirectory" : "jupiter 04/07/2017 00:36",
+		"hasChanged:" : "jupiter 04/08/2017 03:45",
+		"initialize" : "jupiter 03/05/2017 20:13",
+		"integration" : "jupiter 03/25/2017 01:12",
+		"integration:" : "jupiter 03/25/2017 01:12",
+		"integrationDescription" : "jupiter 04/02/2017 15:15",
+		"jobs" : "jupiter 03/05/2017 20:11",
+		"jobs:" : "jupiter 03/25/2017 01:12",
+		"jobsDescription" : "jupiter 04/10/2017 18:46",
+		"numberOfJobs" : "jupiter 04/11/2017 15:09",
+		"numberOfJobsDescription" : "jupiter 04/11/2017 15:22",
+		"parentDirectory" : "jupiter 04/07/2017 00:35" } }

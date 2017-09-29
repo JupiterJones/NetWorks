@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Projects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"targetObject" ],
+	"name" : "NWObjectsWithTarget",
+	"pools" : [
+		 ],
+	"super" : "NWObjectsChanged",
+	"type" : "normal" }

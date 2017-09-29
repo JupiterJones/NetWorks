@@ -1,0 +1,18 @@
+{
+	"category" : "NetWorks-Model-WorkOrders",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workOrder",
+		"jobLineItem",
+		"quantity",
+		"quantityComplete",
+		"tests" ],
+	"name" : "NWWorkOrderLineItem",
+	"pools" : [
+		 ],
+	"super" : "NWObjectWithTitleAndComment",
+	"type" : "normal" }

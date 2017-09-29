@@ -1,0 +1,61 @@
+Subcontractor Schedule of Rates Summary,,,,,,,,,,
+,,,,,,,,,,
+2DNP-20: Craig Comms,,,,,,,,,,
+,,,,,,,,,,
+Lend Lease,,,,,,,,,,
+,,,,,,,,,,
+SoR Code,Asset,UoM,Subcontractor,Rate,Actual Qty,Actual Value,,,Node,Contractor
+,,,,,,,,,,
+06-02-00-06/01-05,"Equipment & fibre installation, testing and commissioning of large Node Cab",ea,,"$ 1,600.00",3,"$ 4,800.00",,,,
+,2DNP-20-01-FNO-001,ea,Craig Comms,"$ 1,600.00",1,"$ 1,600.00",,,01,Craig Smith
+,2DNP-20-02-FNO-001,ea,Craig Comms,"$ 1,600.00",1,"$ 1,600.00",,,02,Craig Smith
+,2DNP-20-03-FNO-001,ea,Craig Comms,"$ 1,600.00",1,"$ 1,600.00",,,03,Craig Smith
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+06-01-01-02/01-01,Installation of a DFN fibre joint enclosure - ORS 6,JntEnc,,$ 141.04,2,$ 282.08,,,,
+,2DNP-20-00-DJL-001,JntEnc,Craig Comms,$ 141.04,1,$ 141.04,,,00,Craig Smith
+,2DNP-20-00-DJL-001,JntEnc,Craig Comms,$ 141.04,1,$ 141.04,,,00,Craig Smith
+,,,,,,,,,,
+06-01-04-01/01-03,Prepare DFN fibre cable sheath 144F,Cable,,$ 175.00,2,$ 350.00,,,,
+,2DNP-20-00-DJL-001,Cable,Craig Comms,$ 175.00,1,$ 175.00,,,00,Craig Smith
+,2DNP-20-00-DJL-001,Cable,Craig Comms,$ 175.00,1,$ 175.00,,,00,Craig Smith
+,,,,,,,,,,
+06-01-04-01/01-04,Prepare DFN fibre cable sheath 72F.,Cable,,$ 88.17,2,$ 176.34,,,,
+,2DNP-20-00-DJL-001,Cable,Craig Comms,$ 88.17,2,$ 176.34,,,00,Craig Smith
+,,,,,,,,,,
+06-01-04-03/01-01,Prepare Tether fibre cable sheath,Cable,,$ 54.60,6,$ 327.60,,,,
+,2DNP-20-00-DJL-001,Cable,Craig Comms,$ 54.60,1,$ 54.60,,,00,Craig Smith
+,2DNP-20-00-DJL-001,Cable,Craig Comms,$ 54.60,2,$ 109.20,,,00,Craig Smith
+,2DNP-20-01-FNO-001,Cable,Craig Comms,$ 54.60,1,$ 54.60,,,01,Craig Smith
+,2DNP-20-02-FNO-001,Cable,Craig Comms,$ 54.60,1,$ 54.60,,,02,Craig Smith
+,2DNP-20-03-FNO-001,Cable,Craig Comms,$ 54.60,1,$ 54.60,,,03,Craig Smith
+,,,,,,,,,,
+,,,,,,,,,,
+06-04-00-01/01-03,144F Cable to be terminated in FAN on HDODF,cable,,$ 600.00,1,$ 600.00,,,,
+,2DNP-20-ODF-001-S01,cable,Craig Comms,$ 600.00,1,$ 600.00,,,00,Craig Smith
+,,,,,,,,,,
+06-04-00-02/01-01,Supply & install patching cable for PON patching.,cable,,$ 50.00,6,$ 300.00,,,,
+,2DNP-20-ODF-001-S01,cable,Craig Comms,$ 50.00,6,$ 300.00,,,00,Craig Smith
+,,,,,,,,,,
+06-05-00-01/01-01,Installation of a multiport in underground pit or manhole.,ea,,$ 42.42,3,$ 127.26,,,,
+,2DNP-20-01-MPT-001,ea,Craig Comms,$ 42.42,1,$ 42.42,,,01,Craig Smith
+,2DNP-20-02-MPT-001,ea,Craig Comms,$ 42.42,1,$ 42.42,,,02,Craig Smith
+,2DNP-20-03-MPT-001,ea,Craig Comms,$ 42.42,1,$ 42.42,,,03,Craig Smith
+,,,,,,,,,,
+06-06-00-01/01-01,Splicing of optic fibre ribbons.,ribbon,,$ 19.15,14,$ 268.10,,,,
+,2DNP-20-00-DJL-001,ribbon,Craig Comms,$ 19.15,12,$ 229.80,,,00,Craig Smith
+,2DNP-20-00-DJL-001,ribbon,Craig Comms,$ 19.15,2,$ 38.30,,,00,Craig Smith
+,,,,,,,,,,
+06-06-00-02/01-01,Splicing of single fibre,ribbon,,$ 9.09,6,$ 54.54,,,,
+,2DNP-20-01-FNO-001,ribbon,Craig Comms,$ 9.09,2,$ 18.18,,,01,Craig Smith
+,2DNP-20-02-FNO-001,ribbon,Craig Comms,$ 9.09,2,$ 18.18,,,02,Craig Smith
+,2DNP-20-03-FNO-001,ribbon,Craig Comms,$ 9.09,2,$ 18.18,,,03,Craig Smith
+,,,,,,,,,,
+06-06-00-03/01-01,De-Ribbonise 12 fibre ribbon.,ribbon,,$ 32.00,3,$ 96.00,,,,
+,2DNP-20-01-FNO-001,ribbon,Craig Comms,$ 32.00,1,$ 32.00,,,01,Craig Smith
+,2DNP-20-02-FNO-001,ribbon,Craig Comms,$ 32.00,1,$ 32.00,,,02,Craig Smith
+,2DNP-20-03-FNO-001,ribbon,Craig Comms,$ 32.00,1,$ 32.00,,,03,Craig Smith
+,,,,,,,,,,
+06-07-02-01/01-01,DFN ODTR Testing.,fibre,,$ 27.00,144,"$ 3,888.00",,,,
+,2DNP-20-ODF-001-S01,fibre,Craig Comms,$ 27.00,144,"$ 3,888.00",,,00,Craig Smith

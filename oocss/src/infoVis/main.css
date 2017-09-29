@@ -1,0 +1,29 @@
+
+
+body {
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #444444;
+}
+
+em {
+	font-weight: normal;
+	font-style: normal;
+	color: #1BA6DF;
+}
+
+a {
+	display: inline-block;
+	color: #1BA6DF;
+	text-decoration: none;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	border-bottom-color: #888888;
+}
+
+a:hover {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #1BA6DF;
+}
+

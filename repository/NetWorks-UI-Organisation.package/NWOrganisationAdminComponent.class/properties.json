@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Organisation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"organisation" ],
+	"name" : "NWOrganisationAdminComponent",
+	"pools" : [
+		 ],
+	"super" : "AdminLTE",
+	"type" : "normal" }

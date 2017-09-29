@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Announcements",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 04/05/2017 18:28",
+	"instvars" : [
+		"tab" ],
+	"name" : "NWTabSelected",
+	"pools" : [
+		 ],
+	"super" : "Announcement",
+	"type" : "normal" }

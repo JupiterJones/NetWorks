@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Tests-Model-Admin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model" ],
+	"name" : "NWModelRootTests",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractTestCase",
+	"type" : "normal" }

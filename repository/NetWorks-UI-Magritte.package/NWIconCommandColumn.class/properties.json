@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWIconCommandColumn",
+	"pools" : [
+		 ],
+	"super" : "MACommandColumn",
+	"type" : "normal" }

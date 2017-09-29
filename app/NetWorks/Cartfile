@@ -1,0 +1,31 @@
+# Alamofire version 4.5
+github "Alamofire/Alamofire" >= 4.5
+github "Alamofire/AlamofireImage" >= 3.2
+github "Alamofire/AlamofireNetworkActivityIndicator" >= 2.2
+
+# RESToFire
+github "Restofire/Restofire" ~> 2.2
+
+# SwiftyJSON
+github "SwiftyJSON/SwiftyJSON" >= 3.1
+
+# Keychain
+github "marketplacer/keychain-swift" ~> 7.0
+
+# Location
+github "malcommac/SwiftLocation"  >= 2.0
+
+# Logging
+github "DaveWoodCom/XCGLogger" ~> 4.0.0
+
+# Signature
+github "ipraba/EPSignature" >= 1.0.3
+
+# FontAwesome Icons
+github "thii/FontAwesome.swift" >= 1.3
+
+# PDF Kit
+github "derekblair/ILPDFKit"
+
+# EVReflection
+github "evermeer/EVReflection" >= 5.0

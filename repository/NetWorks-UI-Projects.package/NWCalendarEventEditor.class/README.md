@@ -1,0 +1,1 @@
+is the modal pop-up that allows one to copy, delete, edit, and create events in the example.  

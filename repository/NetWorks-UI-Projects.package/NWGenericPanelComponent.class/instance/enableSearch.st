@@ -1,0 +1,3 @@
+actions
+enableSearch
+  hasSearch := true

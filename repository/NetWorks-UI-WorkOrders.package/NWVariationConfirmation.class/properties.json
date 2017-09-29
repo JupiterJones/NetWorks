@@ -1,0 +1,15 @@
+{
+	"category" : "NetWorks-UI-WorkOrders",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"requestedQuantity",
+		"completedQuantity" ],
+	"name" : "NWVariationConfirmation",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractComponent",
+	"type" : "normal" }

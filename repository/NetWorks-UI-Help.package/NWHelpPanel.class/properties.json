@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Help",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 04/08/2017 19:04",
+	"instvars" : [
+		 ],
+	"name" : "NWHelpPanel",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractPanel",
+	"type" : "normal" }

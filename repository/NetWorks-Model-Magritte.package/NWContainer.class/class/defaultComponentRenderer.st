@@ -1,0 +1,3 @@
+defaults
+defaultComponentRenderer
+  ^ NWFormRenderer

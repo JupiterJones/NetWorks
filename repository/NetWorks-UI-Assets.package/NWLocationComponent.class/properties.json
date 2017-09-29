@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Assets",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 06/23/2017 16:32",
+	"instvars" : [
+		"treeView" ],
+	"name" : "NWLocationComponent",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractContainerComponent",
+	"type" : "normal" }

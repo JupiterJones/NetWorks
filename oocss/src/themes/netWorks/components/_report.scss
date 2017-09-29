@@ -1,0 +1,114 @@
+/* NetWorks report */
+
+//For cancel and save buttons
+.magritte .buttons {
+        text-align: right;
+        
+        input{
+            height:32px;
+            background:none;
+            border:none;
+            background-repeat: no-repeat;
+            background-position: left;  
+            margin-left: 10px;
+            cursor:pointer;
+            &:nth-of-type(1) {
+                float:right;
+                background-image: url(/files/CCFileLibrary/images/save.png);
+                background-size: contain;
+                padding-left: 35px;
+            }
+            &:nth-of-type(2) {
+            	background-image: url(/files/CCFileLibrary/images/cancel.png); 
+            	background-size: contain;
+                padding-left: 30px;
+            }            
+        }
+    } 
+
+//For Add button
+.magritte .reportComponent input {
+    
+}
+
+// Report Search
+.reportSearch {
+	float: right;
+}
+
+//For MADescription with cssClass of reportComponent
+.magritte dt.reportComponent{
+    text-align: center;
+    font-weight: bold;
+    font-size:1.5em;
+    padding-bottom:20px;
+    display: none;
+}
+
+.selection-actions {
+    float: right;
+    
+    .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+}
+
+table.report, .reportComponent table {
+    width: 100%;
+    
+    th {
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    td{
+        padding:3px 0px;
+    }
+    
+     tfoot{
+        text-align: center;
+        td{
+            padding-top:2em;
+        }
+    }
+    
+    // alignment
+    th, tbody td {
+        text-align: center;
+        
+        // Checkbox
+        &:first-child {
+            text-align: left;
+        }
+        
+        &:nth-child(2) {
+            text-align: left;
+        }
+        
+        &:last-child {
+            text-align: right;
+            
+            a {
+                padding-left: 8px;
+            }
+        }
+    }
+    
+    // selection
+    tbody tr {
+        td:last-child { 
+            opacity:0.5;
+        }
+        
+        &:hover {
+            background-color: rgba(0,0,0,0.05);
+            
+            td:last-child {
+                opacity:1;
+            }
+        }
+    } 
+}
+
+
+

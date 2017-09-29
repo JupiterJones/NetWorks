@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Model-Integration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"logo" ],
+	"name" : "NWIntegration",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractObject",
+	"type" : "normal" }

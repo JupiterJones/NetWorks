@@ -1,0 +1,18 @@
+{
+	"category" : "NetWorks-Model-Organisation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"dnsName",
+		"enabled",
+		"logoSmall",
+		"logoLarge" ],
+	"name" : "NWOrganisation",
+	"pools" : [
+		 ],
+	"super" : "NWObjectWithTitleAndComment",
+	"type" : "normal" }

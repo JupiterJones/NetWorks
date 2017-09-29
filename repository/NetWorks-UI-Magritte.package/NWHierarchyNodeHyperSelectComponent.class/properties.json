@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWHierarchyNodeHyperSelectComponent",
+	"pools" : [
+		 ],
+	"super" : "NWHierarchyNodeSelectComponent",
+	"type" : "normal" }

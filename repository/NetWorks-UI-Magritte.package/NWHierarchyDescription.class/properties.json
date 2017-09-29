@@ -1,0 +1,17 @@
+{
+	"category" : "NetWorks-UI-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rootNode",
+		"nodeLabelBlock",
+		"hierarchyUpSelector",
+		"hierarchyDownSelector" ],
+	"name" : "NWHierarchyDescription",
+	"pools" : [
+		 ],
+	"super" : "MASingleOptionDescription",
+	"type" : "normal" }

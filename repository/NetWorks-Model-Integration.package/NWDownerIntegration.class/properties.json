@@ -1,0 +1,17 @@
+{
+	"category" : "NetWorks-Model-Integration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"userName",
+		"password",
+		"driver",
+		"document" ],
+	"name" : "NWDownerIntegration",
+	"pools" : [
+		 ],
+	"super" : "NWIntegration",
+	"type" : "normal" }

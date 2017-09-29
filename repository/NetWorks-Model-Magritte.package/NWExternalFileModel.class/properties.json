@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Model-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"urlLookupBlock" ],
+	"name" : "NWExternalFileModel",
+	"pools" : [
+		 ],
+	"super" : "MAExternalFileModel",
+	"type" : "normal" }

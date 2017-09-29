@@ -1,0 +1,4 @@
+accessing
+asset
+
+   ^asset

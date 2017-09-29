@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"canBeAccessedByUser:" : "jupiter 04/09/2017 17:34",
+		"children" : "jupiter 03/24/2017 17:03",
+		"componentAt:" : "jupiter 03/24/2017 17:04",
+		"componentAt:ifAbsentPut:" : "jupiter 03/24/2017 17:05",
+		"crumbs" : "jupiter 06/14/2017 17:57",
+		"initialize" : "jupiter 03/24/2017 17:04",
+		"model" : "jupiter 04/04/2017 04:04",
+		"permissionsRequired" : "jupiter 04/09/2017 17:19",
+		"renderBreadcrumbOn:" : "jupiter 06/14/2017 18:00",
+		"renderPresenterBreadcrumbs:on:" : "jupiter 06/14/2017 17:59" } }

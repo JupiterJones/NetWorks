@@ -1,0 +1,3 @@
+initialisation
+initialize
+	self install

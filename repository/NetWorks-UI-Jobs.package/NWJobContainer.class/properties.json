@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Jobs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 04/05/2017 03:49",
+	"instvars" : [
+		 ],
+	"name" : "NWJobContainer",
+	"pools" : [
+		 ],
+	"super" : "NWContainer",
+	"type" : "normal" }

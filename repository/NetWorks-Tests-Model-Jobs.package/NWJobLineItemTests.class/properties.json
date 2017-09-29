@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Tests-Model-Jobs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWJobLineItemTests",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractTestCase",
+	"type" : "normal" }

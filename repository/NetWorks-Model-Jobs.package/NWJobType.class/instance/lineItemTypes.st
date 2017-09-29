@@ -1,0 +1,4 @@
+accessing
+lineItemTypes
+
+   ^lineItemTypes

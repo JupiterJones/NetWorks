@@ -1,0 +1,3 @@
+accessing
+newObjectLabel
+  ^ 'New Contractor'

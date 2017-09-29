@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Model-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWCheckedMemento",
+	"pools" : [
+		 ],
+	"super" : "MACheckedMemento",
+	"type" : "normal" }

@@ -1,0 +1,18 @@
+{
+	"category" : "NetWorks-Model-Integration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"jobTypes",
+		"contractorNames",
+		"customerNames",
+		"contractors",
+		"clients" ],
+	"name" : "NWImportRateCard",
+	"pools" : [
+		 ],
+	"super" : "NWImportCSVTool",
+	"type" : "normal" }

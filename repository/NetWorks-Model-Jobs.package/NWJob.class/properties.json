@@ -1,0 +1,20 @@
+{
+	"category" : "NetWorks-Model-Jobs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"jobType",
+		"project",
+		"asset",
+		"location",
+		"workOrders",
+		"lineItems",
+		"workflow" ],
+	"name" : "NWJob",
+	"pools" : [
+		 ],
+	"super" : "NWObjectWithTitleAndComment",
+	"type" : "normal" }

@@ -1,0 +1,18 @@
+{
+	"category" : "NetWorks-Model-Admin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"organisation",
+		"userName",
+		"avatar",
+		"permissions",
+		"enabled" ],
+	"name" : "NWUser",
+	"pools" : [
+		 ],
+	"super" : "NWObjectWithTitleAndComment",
+	"type" : "normal" }

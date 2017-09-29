@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"announce:" : "jupiter 03/08/2017 15:09",
+		"announcer" : "jupiter 03/08/2017 15:09",
+		"handleFiltered:" : "jupiter 07/08/2017 21:09",
+		"ifLoggedIn:" : "jupiter 03/08/2017 15:09",
+		"isLoggedIn" : "jupiter 03/08/2017 15:09",
+		"logout" : "jupiter 03/08/2017 15:08",
+		"model" : "jupiter 06/03/2017 15:22",
+		"model:" : "jupiter 04/04/2017 04:08",
+		"on:do:" : "jupiter 03/08/2017 15:09",
+		"subscribe:do:for:" : "jupiter 03/08/2017 15:09",
+		"user" : "jupiter 03/08/2017 15:08",
+		"user:" : "jupiter 03/08/2017 15:08",
+		"userName" : "jupiter 03/08/2017 15:08" } }

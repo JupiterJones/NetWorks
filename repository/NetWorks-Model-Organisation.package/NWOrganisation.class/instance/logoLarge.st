@@ -1,0 +1,4 @@
+accessing
+logoLarge
+
+   ^logoLarge

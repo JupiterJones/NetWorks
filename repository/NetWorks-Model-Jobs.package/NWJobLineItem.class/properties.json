@@ -1,0 +1,18 @@
+{
+	"category" : "NetWorks-Model-Jobs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"job",
+		"lineItemType",
+		"quantity",
+		"note",
+		"previousLineItem" ],
+	"name" : "NWJobLineItem",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractObject",
+	"type" : "normal" }

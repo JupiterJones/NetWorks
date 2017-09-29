@@ -1,0 +1,27 @@
+
+a.navigation {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+a.selection {
+	color: #1BA6DF;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+}
+
+ul.navigation {
+	list-style-type: none;
+	padding: 0px;
+}
+
+li.navigation {
+	padding-left: 10px;
+	margin: 5px;
+	height: 1.5em;
+	font-size: 1.1em;
+}
+
+

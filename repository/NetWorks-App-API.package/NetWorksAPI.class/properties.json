@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-App-API",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 03/12/2017 19:21",
+	"instvars" : [
+		 ],
+	"name" : "NetWorksAPI",
+	"pools" : [
+		 ],
+	"super" : "WARestfulHandler",
+	"type" : "normal" }

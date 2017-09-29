@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWMagritteFormDecoration",
+	"pools" : [
+		 ],
+	"super" : "TBSMagritteFormDecoration",
+	"type" : "normal" }

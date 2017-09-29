@@ -1,0 +1,17 @@
+{
+	"category" : "NetWorks-Model-Integration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"document",
+		"rows",
+		"errors",
+		"rawData" ],
+	"name" : "NWImportCSVTool",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractObject",
+	"type" : "normal" }

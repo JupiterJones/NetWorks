@@ -1,0 +1,17 @@
+{
+	"category" : "NetWorks-Model-Admin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"instance" ],
+	"commentStamp" : "jupiter 03/05/2017 17:41",
+	"instvars" : [
+		"organisations",
+		"users",
+		"authorisations",
+		"apiKeys" ],
+	"name" : "NWModelRoot",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractObject",
+	"type" : "normal" }

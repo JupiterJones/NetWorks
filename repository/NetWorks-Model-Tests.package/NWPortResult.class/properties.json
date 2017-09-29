@@ -1,0 +1,17 @@
+{
+	"category" : "NetWorks-Model-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"port",
+		"unit",
+		"high",
+		"low" ],
+	"name" : "NWPortResult",
+	"pools" : [
+		 ],
+	"super" : "NWTestResult",
+	"type" : "normal" }

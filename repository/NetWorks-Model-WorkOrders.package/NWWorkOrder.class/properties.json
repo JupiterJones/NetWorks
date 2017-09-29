@@ -1,0 +1,20 @@
+{
+	"category" : "NetWorks-Model-WorkOrders",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"job",
+		"contractor",
+		"workflow",
+		"scheduleDate",
+		"scheduleDuration",
+		"completionDate",
+		"lineItems" ],
+	"name" : "NWWorkOrder",
+	"pools" : [
+		 ],
+	"super" : "NWObjectWithTitleAndComment",
+	"type" : "normal" }

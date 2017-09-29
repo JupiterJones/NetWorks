@@ -1,0 +1,17 @@
+{
+	"category" : "NetWorks-Model-Jobs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"lineItemType",
+		"appliesTo",
+		"client",
+		"rate" ],
+	"name" : "NWJobLineItemRate",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractObject",
+	"type" : "normal" }

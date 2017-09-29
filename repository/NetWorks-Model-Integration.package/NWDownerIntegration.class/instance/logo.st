@@ -1,0 +1,3 @@
+accessing
+logo
+  ^ NWFileLibrary / #'imagesdownerLogoPng'

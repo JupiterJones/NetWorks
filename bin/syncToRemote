@@ -1,0 +1,7 @@
+LOCAL_ROOT=/opt/git
+REMOTE_ROOT=5smithsprod:/opt/git
+rsync -avzhe ssh $LOCAL_ROOT/JupiterJones/NetWorks $REMOTE_ROOT/JupiterJones/
+rsync -avzhe ssh $LOCAL_ROOT/JupiterSmalltalk/AdminLTE $REMOTE_ROOT/JupiterSmalltalk/
+rsync -avzhe ssh $LOCAL_ROOT/JupiterSmalltalk/Seaside $REMOTE_ROOT/JupiterSmalltalk/
+rsync -avzhe ssh $LOCAL_ROOT/JupiterSmalltalk/PharoCompatibility $REMOTE_ROOT/JupiterSmalltalk/
+rsync -avzhe ssh $LOCAL_ROOT/JQueryWidgetKit/fullcalendar $REMOTE_ROOT/JQueryWidgetKit/

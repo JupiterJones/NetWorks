@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Organisation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 06/10/2017 19:22",
+	"instvars" : [
+		 ],
+	"name" : "NWTestTypesPanel",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractPanel",
+	"type" : "normal" }

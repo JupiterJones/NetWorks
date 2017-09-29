@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWMagritteReport",
+	"pools" : [
+		 ],
+	"super" : "TBSMagritteReport",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+accessing
+editedEvent
+	^ editedEvent

@@ -1,0 +1,22 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addFieldsToDocument" : "jupiter 04/06/2017 00:06",
+		"assetForAsset:node:" : "jupiter 04/06/2017 00:17",
+		"assetWithTitle:" : "jupiter 04/06/2017 00:15",
+		"configureClient:" : "jupiter 04/06/2017 00:07",
+		"contractorNamed:" : "jupiter 04/06/2017 00:07",
+		"contractorsNamed:" : "jupiter 04/06/2017 00:07",
+		"createClient" : "jupiter 04/06/2017 00:07",
+		"createJobs" : "jupiter 04/06/2017 00:08",
+		"createModel" : "jupiter 04/06/2017 00:08",
+		"createProject" : "jupiter 04/08/2017 03:07",
+		"createWorkOrdersForContractors:job:lineItem:" : "jupiter 04/06/2017 00:09",
+		"installModel" : "jupiter 04/06/2017 00:20",
+		"jobForAsset:node:type:" : "jupiter 04/06/2017 00:11",
+		"jobTypeFromLineItemTitle:" : "jupiter 04/06/2017 00:11",
+		"lineItemTypeWithTitle:" : "jupiter 04/06/2017 00:11",
+		"lineItemWithType:title:job:quantity:" : "jupiter 04/06/2017 00:11",
+		"locationForLocation:node:" : "jupiter 06/23/2017 16:18",
+		"locationWithTitle:" : "jupiter 06/23/2017 16:19" } }

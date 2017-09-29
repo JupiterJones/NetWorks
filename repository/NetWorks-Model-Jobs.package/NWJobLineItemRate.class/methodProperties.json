@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"<=" : "jupiter 06/13/2017 20:55",
+		"appliesTo" : "jupiter 06/11/2017 19:18",
+		"appliesTo:" : "jupiter 06/11/2017 19:18",
+		"appliesToDescription" : "jupiter 06/14/2017 17:37",
+		"appliesToTitle" : "jupiter 06/12/2017 04:06",
+		"appliesToTitleDescription" : "jupiter 06/14/2017 17:40",
+		"backReference:" : "jupiter 06/12/2017 04:04",
+		"client" : "jupiter 06/13/2017 21:15",
+		"client:" : "jupiter 06/13/2017 21:15",
+		"clientDescription" : "jupiter 06/14/2017 17:38",
+		"lineItemType" : "jupiter 06/11/2017 19:18",
+		"lineItemType:" : "jupiter 06/11/2017 19:18",
+		"rate" : "jupiter 06/11/2017 19:18",
+		"rate:" : "jupiter 06/11/2017 19:18",
+		"rateDescription" : "jupiter 06/14/2017 17:43" } }

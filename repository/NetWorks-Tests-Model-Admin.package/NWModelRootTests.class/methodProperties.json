@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "jupiter 03/05/2017 18:28",
+		"tearDown" : "jupiter 03/05/2017 18:29",
+		"testAddOrganisation" : "jupiter 03/05/2017 18:39",
+		"testFindOrganisationWithDnsName" : "jupiter 03/06/2017 19:55",
+		"testModelClass" : "jupiter 03/05/2017 18:30",
+		"testOrganisationsCollection" : "jupiter 03/05/2017 18:34" } }

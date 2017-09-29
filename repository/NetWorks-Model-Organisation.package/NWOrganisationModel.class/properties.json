@@ -1,0 +1,24 @@
+{
+	"category" : "NetWorks-Model-Organisation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"organisation",
+		"users",
+		"clients",
+		"projects",
+		"locations",
+		"assets",
+		"contractors",
+		"jobTypes",
+		"testTypes",
+		"variations",
+		"workflows" ],
+	"name" : "NWOrganisationModel",
+	"pools" : [
+		 ],
+	"super" : "NWIdentifiableObject",
+	"type" : "normal" }

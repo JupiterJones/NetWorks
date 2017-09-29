@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Model-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 03/05/2017 17:08",
+	"instvars" : [
+		"attributes" ],
+	"name" : "NWAbstractObject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

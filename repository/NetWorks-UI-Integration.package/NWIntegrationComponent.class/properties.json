@@ -1,0 +1,16 @@
+{
+	"category" : "NetWorks-UI-Integration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"integration",
+		"model",
+		"result" ],
+	"name" : "NWIntegrationComponent",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractComponent",
+	"type" : "normal" }

@@ -1,0 +1,13 @@
+/* NetWorks Integration Panel */
+
+.integrationPanel {
+	display: flex;
+	justify-content: space-between;
+	
+	.integrationLogo {
+		background-color: white;
+		border: 1px solid rgba(0,0,0,0.5);
+		border-radius: 6px;
+		padding: 12px;
+	}
+}

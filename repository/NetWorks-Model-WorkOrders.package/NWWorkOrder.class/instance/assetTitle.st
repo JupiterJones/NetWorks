@@ -1,0 +1,3 @@
+accessing
+assetTitle
+  ^ job asset

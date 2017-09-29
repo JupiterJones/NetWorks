@@ -1,0 +1,16 @@
+{
+	"category" : "NetWorks-UI-Organisation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"passengers",
+		"passengerIDs",
+		"nextID" ],
+	"name" : "NWAssetTreeComponent",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

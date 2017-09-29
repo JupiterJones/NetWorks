@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Projects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWObjectsDoubleClicked",
+	"pools" : [
+		 ],
+	"super" : "NWObjectsWithTarget",
+	"type" : "normal" }

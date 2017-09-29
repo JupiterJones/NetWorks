@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addFieldsToDocument" : "jupiter 06/12/2017 18:14",
+		"analyseRawData" : "jupiter 06/18/2017 21:50",
+		"contractorWithName:" : "jupiter 06/18/2017 17:20",
+		"createClients" : "jupiter 06/11/2017 16:08",
+		"createContractors" : "jupiter 06/18/2017 21:15",
+		"createJobTypes" : "jupiter 06/13/2017 21:13",
+		"createModel" : "jupiter 06/12/2017 18:36",
+		"customerWithName:" : "jupiter 06/12/2017 17:52",
+		"installModel" : "jupiter 06/18/2017 21:51",
+		"jobTypeFromRow:" : "jupiter 06/12/2017 17:17",
+		"lineItemTypeForJobType:row:" : "jupiter 06/12/2017 17:22",
+		"rateForJobType:lineItemType:applyingToContractorName:customer:value:" : "jupiter 06/13/2017 21:22",
+		"rateForLineItemType:applyingToCustomerName:value:" : "jupiter 06/13/2017 20:41",
+		"valueFrom:" : "jupiter 06/13/2017 18:39" } }

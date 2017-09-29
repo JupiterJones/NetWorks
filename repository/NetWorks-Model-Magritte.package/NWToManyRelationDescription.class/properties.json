@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Model-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWToManyRelationDescription",
+	"pools" : [
+		 ],
+	"super" : "MAToManyRelationDescription",
+	"type" : "normal" }

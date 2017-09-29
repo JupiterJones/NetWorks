@@ -1,0 +1,16 @@
+{
+	"category" : "NetWorks-Model-Admin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"object",
+		"directory",
+		"backupName" ],
+	"name" : "NWBackupRestoreUtility",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

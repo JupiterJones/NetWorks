@@ -1,0 +1,15 @@
+{
+	"category" : "NetWorks-UI-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 04/06/2017 20:50",
+	"instvars" : [
+		"selectedTab",
+		"announcer" ],
+	"name" : "NWTabbedContainerComponent",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractContainerComponent",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"finderComponent" : "jupiter 04/08/2017 04:06",
+		"icon" : "jupiter 04/06/2017 15:57",
+		"initialize" : "jupiter 04/05/2017 18:30",
+		"newObjectLabel" : "jupiter 04/05/2017 21:31",
+		"renderBasicsOn:" : "jupiter 06/23/2017 16:22",
+		"renderFilesOn:" : "jupiter 04/08/2017 04:08",
+		"renderLineItemsOn:" : "jupiter 04/05/2017 18:36",
+		"renderWorkOrdersOn:" : "jupiter 04/05/2017 18:36",
+		"tabs" : "jupiter 04/08/2017 04:07",
+		"updateRoot:" : "jupiter 04/08/2017 04:06" } }

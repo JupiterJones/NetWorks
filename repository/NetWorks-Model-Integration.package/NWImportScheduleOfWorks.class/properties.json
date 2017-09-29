@@ -1,0 +1,20 @@
+{
+	"category" : "NetWorks-Model-Integration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"assetPrefix",
+		"client",
+		"project",
+		"jobs",
+		"assets",
+		"locations",
+		"lineItems" ],
+	"name" : "NWImportScheduleOfWorks",
+	"pools" : [
+		 ],
+	"super" : "NWImportCSVTool",
+	"type" : "normal" }

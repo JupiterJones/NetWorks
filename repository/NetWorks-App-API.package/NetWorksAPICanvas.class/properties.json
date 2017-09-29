@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-App-API",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 03/12/2017 18:32",
+	"instvars" : [
+		 ],
+	"name" : "NetWorksAPICanvas",
+	"pools" : [
+		 ],
+	"super" : "WAJsonCanvas",
+	"type" : "normal" }

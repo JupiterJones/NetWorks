@@ -1,0 +1,17 @@
+{
+	"category" : "NetWorks-UI-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"passengers",
+		"passengerIDs",
+		"nextID",
+		"textInputId" ],
+	"name" : "NWHierarchyNodeSelectComponent",
+	"pools" : [
+		 ],
+	"super" : "MASingleSelectionComponent",
+	"type" : "normal" }

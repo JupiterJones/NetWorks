@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfNetWorks",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfNetWorks",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

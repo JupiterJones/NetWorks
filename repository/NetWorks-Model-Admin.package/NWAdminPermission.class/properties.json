@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-Model-Admin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWAdminPermission",
+	"pools" : [
+		 ],
+	"super" : "NWPermission",
+	"type" : "normal" }

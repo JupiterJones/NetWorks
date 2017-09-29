@@ -1,0 +1,1 @@
+You need to manually run the class side initialize method after loading this package.  

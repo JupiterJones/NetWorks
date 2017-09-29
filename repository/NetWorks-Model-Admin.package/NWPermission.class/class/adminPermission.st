@@ -1,0 +1,3 @@
+defaults
+adminPermission
+  ^ NWAdminPermission new

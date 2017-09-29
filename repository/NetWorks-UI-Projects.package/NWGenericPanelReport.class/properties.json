@@ -1,0 +1,16 @@
+{
+	"category" : "NetWorks-UI-Projects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"parent",
+		"selectedItems",
+		"droppedItems" ],
+	"name" : "NWGenericPanelReport",
+	"pools" : [
+		 ],
+	"super" : "MAReport",
+	"type" : "normal" }

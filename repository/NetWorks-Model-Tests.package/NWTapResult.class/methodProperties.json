@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "jupiter 07/25/2017 19:00",
+		"numberOfPorts" : "jupiter 07/25/2017 18:42",
+		"numberOfPortsDescription" : "jupiter 07/25/2017 18:46",
+		"portWithId:" : "jupiter 08/02/2017 21:06",
+		"ports" : "jupiter 07/25/2017 17:05",
+		"ports:" : "jupiter 07/25/2017 17:05",
+		"portsDescription" : "jupiter 07/25/2017 17:17",
+		"tap" : "jupiter 07/25/2017 17:10",
+		"tap:" : "jupiter 07/25/2017 17:10",
+		"tapDescription" : "jupiter 07/25/2017 17:16" } }

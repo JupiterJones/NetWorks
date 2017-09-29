@@ -1,0 +1,4 @@
+accessing
+lineItem
+
+   ^lineItem

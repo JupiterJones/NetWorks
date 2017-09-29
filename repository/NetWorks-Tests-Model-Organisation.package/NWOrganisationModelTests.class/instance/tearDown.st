@@ -1,0 +1,3 @@
+resources
+tearDown
+  model := nil

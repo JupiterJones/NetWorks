@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Integration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWDownerIntegrationComponent",
+	"pools" : [
+		 ],
+	"super" : "NWIntegrationComponent",
+	"type" : "normal" }

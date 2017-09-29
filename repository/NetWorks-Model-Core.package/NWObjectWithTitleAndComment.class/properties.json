@@ -1,0 +1,15 @@
+{
+	"category" : "NetWorks-Model-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 03/05/2017 17:12",
+	"instvars" : [
+		"title",
+		"comment" ],
+	"name" : "NWObjectWithTitleAndComment",
+	"pools" : [
+		 ],
+	"super" : "NWIdentifiableObject",
+	"type" : "normal" }

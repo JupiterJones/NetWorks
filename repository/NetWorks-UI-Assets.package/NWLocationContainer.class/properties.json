@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Assets",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 06/23/2017 16:31",
+	"instvars" : [
+		 ],
+	"name" : "NWLocationContainer",
+	"pools" : [
+		 ],
+	"super" : "NWContainer",
+	"type" : "normal" }

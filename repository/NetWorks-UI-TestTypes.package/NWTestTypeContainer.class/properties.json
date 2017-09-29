@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-TestTypes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 06/10/2017 19:14",
+	"instvars" : [
+		 ],
+	"name" : "NWTestTypeContainer",
+	"pools" : [
+		 ],
+	"super" : "NWContainer",
+	"type" : "normal" }

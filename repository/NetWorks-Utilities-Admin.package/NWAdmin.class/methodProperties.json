@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"adminAvatarDirectory" : "jupiter 03/22/2017 15:39",
+		"baseDirectory" : "jupiter 03/21/2017 15:26",
+		"baseDirectoryPath" : "jupiter 03/17/2017 19:48",
+		"createNginxConfigurationForDnsName:privateCloudPath:enabled:" : "jupiter 03/21/2017 19:41",
+		"nginxConfigurationDirectory" : "jupiter 03/21/2017 15:26",
+		"nginxOrganisationDirectory" : "jupiter 03/21/2017 15:26",
+		"organisationNginxTemplateEnabled:" : "jupiter 03/19/2017 15:57",
+		"privateCloudDirectory" : "jupiter 03/21/2017 15:26",
+		"recursiveDelete:" : "jupiter 04/08/2017 00:43",
+		"reloadNginx" : "jupiter 03/19/2017 19:03",
+		"removeNginxConfigurationForDnsName:" : "jupiter 03/17/2017 20:08",
+		"rename:to:" : "jupiter 03/23/2017 01:19",
+		"tempUploadDirectory" : "jupiter 04/06/2017 21:50",
+		"updateDirectoryNameFrom:to:inDirectory:" : "jupiter 03/23/2017 01:24",
+		"updatePrivateCloudDirectoryFrom:to:" : "jupiter 03/21/2017 17:28",
+		"updateWebFromDnsName:to:privateCloudPath:enabled:" : "jupiter 03/21/2017 19:29",
+		"webFilesDirectory" : "jupiter 03/21/2017 15:27",
+		"webRootDirectory" : "jupiter 03/21/2017 15:27",
+		"webUploadsDirectory" : "jupiter 03/21/2017 15:27" },
+	"instance" : {
+		 } }

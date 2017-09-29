@@ -1,0 +1,35 @@
+/* Calendar  */
+
+#calendar {
+    height: 400px;
+    width: 100%;
+    font-size: 0.85em;
+    
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+.ui-dialog, .dropdown-menu {
+    z-index: 10;
+}
+
+.calendar {
+	margin: 0 0 60px 0;
+    td {
+        text-align:right;
+        border-right: 1px solid rgba(0,0,0,0.05);
+        
+        a {
+            background-image: linear-gradient(rgb(66, 139, 202) 0%, rgb(53, 126, 189) 100%);
+			color: white;
+            padding: 2px;
+            text-align: left;
+        }
+        & a:hover {
+            background-color: rgba(0,0,0,0.05);
+            background-image: none;
+			color: black;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "jupiter 03/05/2017 19:42",
+		"tearDown" : "jupiter 03/05/2017 19:43",
+		"testAddJob" : "jupiter 03/05/2017 20:20",
+		"testJobsCollection" : "jupiter 03/05/2017 20:10",
+		"testSetClient" : "jupiter 03/05/2017 20:08" } }

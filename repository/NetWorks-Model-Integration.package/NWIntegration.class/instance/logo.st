@@ -1,0 +1,3 @@
+accessing
+logo
+  ^ self subclassResponsibility

@@ -1,0 +1,17 @@
+{
+	"category" : "NetWorks-Model-Contractors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"email",
+		"user",
+		"jobTypes",
+		"clients" ],
+	"name" : "NWContractor",
+	"pools" : [
+		 ],
+	"super" : "NWObjectWithTitleAndComment",
+	"type" : "normal" }

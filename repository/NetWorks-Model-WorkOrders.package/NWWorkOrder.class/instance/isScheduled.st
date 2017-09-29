@@ -1,0 +1,3 @@
+testing
+isScheduled
+  ^ scheduleDate == nil

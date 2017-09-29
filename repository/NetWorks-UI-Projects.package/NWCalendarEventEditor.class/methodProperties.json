@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"calendar:" : "DataCurator 04/04/2017 03:01",
+		"copyEvent" : "DataCurator 04/04/2017 03:01",
+		"delete:" : "DataCurator 04/04/2017 03:01",
+		"edit" : "DataCurator 04/04/2017 03:01",
+		"edit:" : "DataCurator 04/04/2017 03:01",
+		"editedEvent" : "DataCurator 04/04/2017 03:01",
+		"editedEvent:" : "DataCurator 04/04/2017 03:01",
+		"event" : "DataCurator 04/04/2017 03:01",
+		"event:" : "DataCurator 04/04/2017 03:01",
+		"events" : "DataCurator 04/04/2017 03:01",
+		"renderContentOn:" : "DataCurator 04/04/2017 03:01",
+		"renderCopy:" : "DataCurator 04/04/2017 03:01",
+		"renderCreateForm:" : "DataCurator 04/04/2017 03:01",
+		"renderDelete:" : "DataCurator 04/04/2017 03:01",
+		"renderEditForm:" : "DataCurator 04/04/2017 03:01",
+		"renderEndTime:" : "DataCurator 04/04/2017 03:01",
+		"replace" : "DataCurator 04/04/2017 03:01",
+		"saveNew" : "DataCurator 04/04/2017 03:01",
+		"timeList" : "DataCurator 04/04/2017 03:01" } }

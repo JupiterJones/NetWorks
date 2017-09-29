@@ -1,0 +1,24 @@
+/* NetWorks brand */
+
+.logo-lg, .logo-mini {
+	img {
+		width: auto;
+		max-height: 40px;
+	}
+}
+
+.authCode {
+	width: 100%;
+	text-align: center;
+	padding: 24px;
+}
+
+.authCodeLetter {
+	display: inline;
+	border: 1px solid rgba(0,0,0,0.4);
+	border-radius: 6px;
+	padding: 4px 12px;
+	font-size: 24pt;
+	margin-right: 12px;
+	box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.25);
+}

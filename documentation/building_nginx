@@ -1,0 +1,77 @@
+# Install on OSX with Brew
+brew install nginx-full \
+--with-auth-req \
+--with-webdav \
+--with-dav-ext-module \
+--with-upload-module \
+--with-upload-progress-module \
+--with-http2
+	
+	
+
+# Building NGINX with the file-upload-module on ubuntu
+
+# Prerequisites
+sudo apt-get install make
+sudo apt-get install libpcre3 libpcre3-dev
+sudo apt-get install zlibc zlib1g zlib1g-dev
+sudo apt-get install openssl libssl-dev libperl-dev
+
+# Install and Build NGINX from source
+sudo mkdir /opt/builds
+sudo mkdir /opt/builds/nginx
+cd /opt/builds/nginx
+
+# Imstall nginx 1.9.12 (update this when necessary)
+
+# Needed by the dav ext module
+sudo apt-get install libexpat-dev
+git clone https://github.com/arut/nginx-dav-ext-module.git
+
+# Needed by upload_pass for Pier
+wget http://www.grid.net.ru/nginx/download/nginx_upload_module-2.2.0.zip
+
+
+# nginx
+curl -O http://nginx.org/download/nginx-1.9.12.tar.gz
+tar xf nginx-1.9.12.tar.gz
+cd nginx-1.9.12
+curl -L -o nginx-upload-module-2.2.0.tar.gz https://github.com/vkholodkov/nginx-upload-module/tarball/2.2
+tar xf nginx-upload-module-2.2.0.tar.gz
+mv vkholodkov-nginx-upload-module-aba1e3f nginx-upload-module-2.2.0
+./configure \
+	--with-http2 \
+	--with-http_dav_module \
+	--add-module=../nginx-dav-ext-module/ \
+	--with-http_ssl_module \
+	--with-http_auth_request_module \
+	--add-module=./nginx-upload-module-2.2.0/
+make
+sudo make install
+
+
+
+
+
+# Setting permissions properly
+From the article:
+
+chmod g+s /opt/git/JupiterJones/NetWorks/www_root/files/uploads
+
+setfacl -d -m g::rwx /opt/git/JupiterJones/NetWorks/www_root/files/uploads
+setfacl -d -m o::rx /opt/git/JupiterJones/NetWorks/www_root/files/uploads
+Next we can verify:
+
+getfacl /<directory>
+Output:
+
+# file: ../<directory>/
+# owner: <user>
+# group: media
+# flags: -s-
+user::rwx
+group::rwx
+other::r-x
+default:user::rwx
+default:group::rwx
+default:other::r-x

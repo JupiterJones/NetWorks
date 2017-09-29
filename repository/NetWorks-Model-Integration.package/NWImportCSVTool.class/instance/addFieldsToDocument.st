@@ -1,0 +1,3 @@
+private
+addFieldsToDocument
+  ^ self subclassResponsibility

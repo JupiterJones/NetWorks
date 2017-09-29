@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Clients",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 04/06/2017 17:18",
+	"instvars" : [
+		 ],
+	"name" : "NWClientContainer",
+	"pools" : [
+		 ],
+	"super" : "NWContainer",
+	"type" : "normal" }

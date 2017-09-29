@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"canBeRoot" : "jupiter 02/11/2017 18:34",
+		"initialize" : "jupiter 03/21/2017 15:22",
+		"install" : "jupiter 07/08/2017 21:56",
+		"remove" : "jupiter 02/11/2017 19:40" },
+	"instance" : {
+		"initialize" : "jupiter 03/23/2017 18:42",
+		"model" : "jupiter 03/23/2017 03:32",
+		"renderContentOn:" : "jupiter 03/23/2017 03:05",
+		"renderLogoLargeOn:" : "jupiter 02/28/2017 14:50",
+		"renderLogoMiniOn:" : "jupiter 02/28/2017 14:50",
+		"renderSidebarUserPanelOn:" : "jupiter 03/23/2017 17:17",
+		"userNavbarMenu" : "jupiter 03/23/2017 23:37",
+		"validateUserName:password:" : "jupiter 03/23/2017 16:22" } }

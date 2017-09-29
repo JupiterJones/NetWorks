@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ROf-WZ-2Xh">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setup-->
+        <scene sceneID="k5h-yu-Vn9">
+            <objects>
+                <viewController storyboardIdentifier="Setup" title="Setup" id="ROf-WZ-2Xh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m0F-w4-u9D"/>
+                        <viewControllerLayoutGuide type="bottom" id="bap-UJ-TJ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cgR-HV-RUh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tdQ-cx-BFU">
+                                <rect key="frame" x="16" y="20" width="288" height="548"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nG1-hr-thv">
+                                        <rect key="frame" x="50" y="0.0" width="188" height="53.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIB-EC-U01">
+                                                <rect key="frame" x="59" y="0.0" width="70" height="33.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect to your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGF-3G-0HX">
+                                                <rect key="frame" x="0.0" y="33.5" width="188" height="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ZIB-EC-U01" firstAttribute="leading" secondItem="nG1-hr-thv" secondAttribute="leading" constant="59" id="Z9q-Nq-9cE"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZIB-EC-U01" secondAttribute="bottom" constant="20" symbolic="YES" id="y8Z-K6-QUa"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Cds-0x-twn">
+                                        <rect key="frame" x="54" y="83.5" width="180" height="292.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GLf-jF-ey3">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbt-Pg-obC">
+                                                <rect key="frame" x="48" y="0.0" width="36" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wxm-N2-n2f">
+                                                <rect key="frame" x="96" y="0.0" width="36" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qHs-FZ-8Rd">
+                                                <rect key="frame" x="144" y="0.0" width="36" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r1h-HF-dke">
+                                        <rect key="frame" x="0.0" y="406" width="288" height="142"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter your authorisation code from the NetWorks website." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EiS-Ff-FmN">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="54"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="NJd-Cf-a4X"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E9a-7w-zSB">
+                                                <rect key="frame" x="0.0" y="54" width="288" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Click the link in your welcome email to generate your authorisation code. Or login to the website and select "Mobile" from the menu.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="r1h-HF-dke" firstAttribute="leading" secondItem="tdQ-cx-BFU" secondAttribute="leading" id="2Yt-Gc-CwQ"/>
+                                    <constraint firstItem="nG1-hr-thv" firstAttribute="leading" secondItem="tdQ-cx-BFU" secondAttribute="leading" constant="50" id="COi-ie-VJp"/>
+                                    <constraint firstItem="r1h-HF-dke" firstAttribute="top" secondItem="tdQ-cx-BFU" secondAttribute="top" constant="406" id="DGa-0w-fuZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tdQ-cx-BFU" firstAttribute="leading" secondItem="cgR-HV-RUh" secondAttribute="leadingMargin" id="N6G-ti-MFD"/>
+                            <constraint firstItem="tdQ-cx-BFU" firstAttribute="bottom" secondItem="bap-UJ-TJ4" secondAttribute="top" id="SvO-3B-gyL"/>
+                            <constraint firstItem="tdQ-cx-BFU" firstAttribute="trailing" secondItem="cgR-HV-RUh" secondAttribute="trailingMargin" id="eg6-5n-6ai"/>
+                            <constraint firstItem="tdQ-cx-BFU" firstAttribute="top" secondItem="m0F-w4-u9D" secondAttribute="bottom" id="gF1-Yd-oOx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fc4-HB-sZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+</document>

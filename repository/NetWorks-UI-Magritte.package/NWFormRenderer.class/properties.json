@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWFormRenderer",
+	"pools" : [
+		 ],
+	"super" : "TBSMagritteFormRenderer",
+	"type" : "normal" }

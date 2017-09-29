@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Projects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jupiter 04/03/2017 19:57",
+	"instvars" : [
+		"objects" ],
+	"name" : "NWObjectsChanged",
+	"pools" : [
+		 ],
+	"super" : "NWScriptAnnouncement",
+	"type" : "normal" }

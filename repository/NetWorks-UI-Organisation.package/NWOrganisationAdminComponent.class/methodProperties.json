@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"initialize" : "jupiter 3/9/2017 12:56",
+		"install" : "jupiter 04/04/2017 05:01" },
+	"instance" : {
+		"accessiblePanels" : "jupiter 04/09/2017 19:20",
+		"ajaxErrorHandler" : "jupiter 03/25/2017 14:53",
+		"initialRequest:" : "jupiter 04/04/2017 03:58",
+		"initialize" : "jupiter 04/09/2017 21:52",
+		"initializePanels" : "jupiter 06/23/2017 16:24",
+		"model" : "jupiter 03/06/2017 20:02",
+		"organisation" : "jupiter 03/24/2017 01:30",
+		"renderContentOn:" : "jupiter 03/25/2017 15:21",
+		"renderLogoLargeOn:" : "jupiter 04/04/2017 03:58",
+		"renderLogoMiniOn:" : "jupiter 03/20/2017 17:47",
+		"renderSidebarUserPanelOn:" : "jupiter 03/24/2017 01:15",
+		"renderSupportForAjaxErrorHandlerOn:" : "jupiter 03/25/2017 14:54",
+		"updateRoot:" : "jupiter 05/24/2017 15:04",
+		"userNavbarMenu" : "jupiter 04/09/2017 21:55",
+		"validateUserName:password:" : "jupiter 05/17/2017 14:21" } }

@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "jupiter 03/05/2017 18:51",
+		"tearDown" : "jupiter 03/05/2017 18:52",
+		"testAssetsCollection" : "jupiter 03/05/2017 19:24",
+		"testClientsCollection" : "jupiter 03/05/2017 18:56",
+		"testContractorsCollection" : "jupiter 03/05/2017 19:26",
+		"testJobTypesCollection" : "jupiter 03/05/2017 19:26",
+		"testProjectsCollection" : "jupiter 03/05/2017 19:14",
+		"testVariationsCollection" : "jupiter 03/05/2017 19:31",
+		"testWorkflowsCollection" : "jupiter 03/05/2017 19:32" } }

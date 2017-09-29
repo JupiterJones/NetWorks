@@ -1,0 +1,26 @@
+{
+  "name": "Sass base for Nextround",
+  "version": "0.1.0",
+  "description": "UI/UX SASS base toolkit for Nextround",
+  "keywords": [
+    "flow",
+    "sass",
+    "oocss"
+  ],
+  "authors": [
+    "jupiter.jones@mail.com"
+  ],
+  "license": "MIT",
+  "homepage": "5smiths.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

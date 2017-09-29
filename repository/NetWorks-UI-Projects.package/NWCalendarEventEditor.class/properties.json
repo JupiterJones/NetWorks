@@ -1,0 +1,19 @@
+{
+	"category" : "NetWorks-UI-Projects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"event",
+		"edit",
+		"events",
+		"timeList",
+		"editedEvent",
+		"calendar" ],
+	"name" : "NWCalendarEventEditor",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractComponent",
+	"type" : "normal" }

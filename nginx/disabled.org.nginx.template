@@ -1,0 +1,7 @@
+# NetWorks Organisation - Disabled
+server {
+	listen 80;
+	server_name {{dnsName}};
+	root /opt/git/JupiterJones/NetWorks/www_root;
+	index disabled.html;
+}

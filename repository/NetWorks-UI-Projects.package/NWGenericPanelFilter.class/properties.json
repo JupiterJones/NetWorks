@@ -1,0 +1,17 @@
+{
+	"category" : "NetWorks-UI-Projects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"label",
+		"filterBlock",
+		"isActive",
+		"isExclusive" ],
+	"name" : "NWGenericPanelFilter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Announcements",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NWLoggedIn",
+	"pools" : [
+		 ],
+	"super" : "NWSessionStateChanged",
+	"type" : "normal" }

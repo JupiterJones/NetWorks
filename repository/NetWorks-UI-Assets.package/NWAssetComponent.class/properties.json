@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Assets",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"treeView" ],
+	"name" : "NWAssetComponent",
+	"pools" : [
+		 ],
+	"super" : "NWAbstractContainerComponent",
+	"type" : "normal" }

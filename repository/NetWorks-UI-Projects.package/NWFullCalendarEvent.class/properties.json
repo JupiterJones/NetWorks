@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-UI-Projects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workOrder" ],
+	"name" : "NWFullCalendarEvent",
+	"pools" : [
+		 ],
+	"super" : "JQFullCalendarEvent",
+	"type" : "normal" }
