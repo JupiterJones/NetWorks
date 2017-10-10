@@ -19,11 +19,49 @@ class NetWorksAPI {
 	
 	// MARK: - Instance Variables
 	
+	let productionApiHost = "api.networks.tai.earth"
+	let developmentApiHost = "dev.api.networks.tai.earth"
+	
 	var baseUrl: String?
 	var organisation: NWOrganisation?
 	var workOrders = [NWWorkOrder]()
 	var imageDownloader = ImageDownloader.default
+	var networkManager: NetworkReachabilityManager?
 	
+	// MARK: - Initialisation
+	
+	init() {
+		// Create a shared URL cache
+		let memoryCapacity = 50 * 1024 * 1024; // 20 MB
+		let diskCapacity = 100 * 1024 * 1024; // 100 MB
+		let cache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: "networks_cache")
+		
+		//let apiHost = productionApiHost
+		let apiHost = developmentApiHost
+		
+		Restofire.defaultConfiguration.baseURL = "http://\(apiHost)/1.0/"
+		Restofire.defaultConfiguration.headers = ["Content-Type": "application/json"]
+		Restofire.defaultConfiguration.validation.acceptableStatusCodes = Array(200..<300)
+		Restofire.defaultConfiguration.validation.acceptableContentTypes = ["application/json"]
+		Restofire.defaultConfiguration.retry.retryErrorCodes = [.timedOut,.networkConnectionLost]
+		Restofire.defaultConfiguration.retry.retryInterval = 20
+		Restofire.defaultConfiguration.retry.maxRetryAttempts = 10
+		
+		let sessionConfiguration = URLSessionConfiguration.default
+		sessionConfiguration.timeoutIntervalForRequest = 7
+		sessionConfiguration.timeoutIntervalForResource = 7
+		sessionConfiguration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
+		sessionConfiguration.urlCache = cache
+		sessionConfiguration.requestCachePolicy = .useProtocolCachePolicy
+		
+		Restofire.defaultConfiguration.sessionManager = Alamofire.SessionManager(configuration: sessionConfiguration)
+		
+		networkManager = NetworkReachabilityManager(host: apiHost)
+		networkManager?.listener = { status in
+			log.info("Network Status Changed: \(status)")
+		}
+		networkManager?.startListening()
+	}
 
 	// MARK: - Connecting
 	func connect() {
@@ -76,31 +114,6 @@ class NetWorksAPI {
 		let credential = URLCredential(user: "apiKey", password: uuid.uuidString, persistence: .forSession)
 		Restofire.defaultConfiguration.authentication.credential = credential
 
-	}
-	
-	init() {
-		// Create a shared URL cache
-		let memoryCapacity = 50 * 1024 * 1024; // 20 MB
-		let diskCapacity = 100 * 1024 * 1024; // 100 MB
-		let cache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: "networks_cache")
-		
-		//Restofire.defaultConfiguration.baseURL = "http://api.networks.tai.earth/1.0/"
-		Restofire.defaultConfiguration.baseURL = "http://dev.api.networks.tai.earth/1.0/"
-		Restofire.defaultConfiguration.headers = ["Content-Type": "application/json"]
-		Restofire.defaultConfiguration.validation.acceptableStatusCodes = Array(200..<300)
-		Restofire.defaultConfiguration.validation.acceptableContentTypes = ["application/json"]
-		Restofire.defaultConfiguration.retry.retryErrorCodes = [.timedOut,.networkConnectionLost]
-		Restofire.defaultConfiguration.retry.retryInterval = 20
-		Restofire.defaultConfiguration.retry.maxRetryAttempts = 10
-		
-		let sessionConfiguration = URLSessionConfiguration.default
-		sessionConfiguration.timeoutIntervalForRequest = 7
-		sessionConfiguration.timeoutIntervalForResource = 7
-		sessionConfiguration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
-		sessionConfiguration.urlCache = cache
-		sessionConfiguration.requestCachePolicy = .useProtocolCachePolicy
-		
-		Restofire.defaultConfiguration.sessionManager = Alamofire.SessionManager(configuration: sessionConfiguration)
 	}
 	
 	

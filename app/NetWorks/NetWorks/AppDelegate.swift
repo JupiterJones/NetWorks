@@ -35,7 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 		preferredMemoryUsageAfterPurge: 60 * 1024 * 1024
 	)
 
-
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
 		NetworkActivityIndicatorManager.shared.isEnabled = true
