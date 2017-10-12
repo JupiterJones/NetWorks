@@ -169,7 +169,7 @@ class CameraViewController: UIViewController, UIScrollViewDelegate, UIImagePicke
 		}
 	}
 	
-	func image(image: UIImage, didFinishSavingWithError error: NSErrorPointer, contextInfo:UnsafeRawPointer) {
+	@objc func image(image: UIImage, didFinishSavingWithError error: NSErrorPointer, contextInfo:UnsafeRawPointer) {
 		
 		if error != nil {
 			let alert = UIAlertController(title: "Save Failed", message: "Failed to save image", preferredStyle: UIAlertControllerStyle.alert)
@@ -227,7 +227,7 @@ class CameraViewController: UIViewController, UIScrollViewDelegate, UIImagePicke
 		let plainFont = UIFont.systemFont(ofSize: 12)
 		
 		let whiteColor = UIColor.white
-		let transparentBlack = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.7)
+		let transparentBlack = UIColor.black.withAlphaComponent(0.7)
 		
 		let scale = UIScreen.main.scale
 		UIGraphicsBeginImageContextWithOptions(image.size, false, scale)
@@ -242,23 +242,23 @@ class CameraViewController: UIViewController, UIScrollViewDelegate, UIImagePicke
 		let logoBottom = logoRect.height + CGFloat(padding * 2)
 		
 		let workOrderLabel = workOrderLineItem!.workOrder!.title! + " / " + workOrderLineItem!.jobLineItem!.lineItemType!.title!
-		workOrderLabel.draw(at: CGPoint(x: 20, y: (logoBottom + 30)), withAttributes: [NSFontAttributeName:boldFont, NSForegroundColorAttributeName:whiteColor])
+		workOrderLabel.draw(at: CGPoint(x: 20, y: (logoBottom + 30)), withAttributes: [NSAttributedStringKey.font:boldFont, NSAttributedStringKey.foregroundColor:whiteColor])
 
 		let date = Date()
 		let formatter = DateFormatter();
 		formatter.dateFormat = "yyyy-MM-dd HH:mm:ss ZZZ";
 		let defaultTimeZoneStr = formatter.string(from: date);
-		defaultTimeZoneStr.draw(at: CGPoint(x: 20, y: (logoBottom + 60)), withAttributes: [NSFontAttributeName:plainFont, NSForegroundColorAttributeName:whiteColor])
+		defaultTimeZoneStr.draw(at: CGPoint(x: 20, y: (logoBottom + 60)), withAttributes: [NSAttributedStringKey.font:plainFont, NSAttributedStringKey.foregroundColor:whiteColor])
 		
 		let latitudeLabel = "Latitude: \(location()?.coordinate.latitude ?? 0)" as NSString
-		latitudeLabel.draw(at: CGPoint(x: 20, y: (logoBottom + 80)), withAttributes: [NSFontAttributeName:plainFont, NSForegroundColorAttributeName:whiteColor])
+		latitudeLabel.draw(at: CGPoint(x: 20, y: (logoBottom + 80)), withAttributes: [NSAttributedStringKey.font:plainFont, NSAttributedStringKey.foregroundColor:whiteColor])
 		
 		let longitudeLabel = "Longitude: \(location()?.coordinate.longitude ?? 0)" as NSString
-		longitudeLabel.draw(at: CGPoint(x: 20, y: (logoBottom + 100)), withAttributes: [NSFontAttributeName:plainFont, NSForegroundColorAttributeName:whiteColor])
+		longitudeLabel.draw(at: CGPoint(x: 20, y: (logoBottom + 100)), withAttributes: [NSAttributedStringKey.font:plainFont, NSAttributedStringKey.foregroundColor:whiteColor])
 		
 		if let currentPlacemark = placemark() {
 			let placemarkLabel = (currentPlacemark.addressDictionary?["FormattedAddressLines"] as! NSArray).componentsJoined(by: ", ")
-			placemarkLabel.draw(at: CGPoint(x: 20, y: (logoBottom + 120)), withAttributes: [NSFontAttributeName:plainFont, NSForegroundColorAttributeName:whiteColor])
+			placemarkLabel.draw(at: CGPoint(x: 20, y: (logoBottom + 120)), withAttributes: [NSAttributedStringKey.font:plainFont, NSAttributedStringKey.foregroundColor:whiteColor])
 		}
 		
 		let result = UIGraphicsGetImageFromCurrentImageContext()!
@@ -368,7 +368,7 @@ class CameraViewController: UIViewController, UIScrollViewDelegate, UIImagePicke
 		do {
 			try imageData?.write(to: imageUrl!)
 		} catch {
-			log.error("Failed to save file: \(imageUrl)")
+			log.error("Failed to save file: \(String(describing: imageUrl))")
 		}
 		
 		Alamofire.upload(

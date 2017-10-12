@@ -35,6 +35,11 @@ baseline: spec
                 versionString: '0.2.3';
                 repository:
                     'http://www.smalltalkhub.com/mc/TorstenBergmann/BootstrapMagritte/main' ];
+        baseline: 'Cryptography'
+          with: [ 
+              spec
+                loads: #('CI');
+                repository: 'github://GsDevKit/Cryptography:master/repository' ];
         configuration: 'FontAwesome'
           with: [ 
               spec
@@ -93,7 +98,7 @@ baseline: spec
           with: [ 
               spec
                 requires:
-                  #('NetWorks-Model-Core' 'NetWorks-Model-FileSystem' 'NetWorks-Model-Organisation' 'NetWorks-Model-Projects') ];
+                  #('Cryptography' 'NetWorks-Model-Core' 'NetWorks-Model-FileSystem' 'NetWorks-Model-Organisation' 'NetWorks-Model-Projects') ];
         package: 'NetWorks-Model-Organisation'
           with: [ spec requires: #('NetWorks-Model-Core' 'NetWorks-Model-Contractors') ];
         package: 'NetWorks-Model-Integration'

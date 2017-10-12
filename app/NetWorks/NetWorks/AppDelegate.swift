@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 		NetworkActivityIndicatorManager.shared.startDelay = 0
 		NetworkActivityIndicatorManager.shared.completionDelay = 1.0
 		
-		tabBarController = window?.rootViewController as! UITabBarController
+		tabBarController = window?.rootViewController as? UITabBarController
 		let splitViewController = tabBarController?.viewControllers?.first as! UISplitViewController
 		let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
 		navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem

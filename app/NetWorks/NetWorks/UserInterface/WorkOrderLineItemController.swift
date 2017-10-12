@@ -65,7 +65,7 @@ class WorkOrderLineItemController: UITableViewController, UIImagePickerControlle
 		self.navigationItem.leftBarButtonItem  = myCustomBackButtonItem
     }
 	
-	func popToRoot(sender:UIBarButtonItem){
+	@objc func popToRoot(sender:UIBarButtonItem){
 		if lineItem.jobLineItem?.lineItemType == nil {
 			let ac = UIAlertController(title: "Can not save yet", message: "You must select a line item type for this new line item.", preferredStyle: .alert)
 			ac.addAction(UIAlertAction(title: "OK", style: .default))
@@ -331,14 +331,14 @@ class WorkOrderLineItemController: UITableViewController, UIImagePickerControlle
 			if (selectedTestIndex?.row)! > 0 {
 				let tests = lineItem.tests[(selectedTestIndex?.row)! - 1]
 				log.verbose("Setting tests: \(tests)")
-				(segue.destination as! TestTableViewController).tests = tests as! NWTapsAndPortsTest
+				(segue.destination as! TestTableViewController).tests = tests as? NWTapsAndPortsTest
 				(segue.destination as! TestTableViewController).workOrderLineItem = lineItem
 			}
 		}
 		
 		if (segue.identifier == "newTestSegue") {
 			
-			(segue.destination as! TestTableViewController).tests = newTestObject() as! NWTapsAndPortsTest
+			(segue.destination as! TestTableViewController).tests = newTestObject() as? NWTapsAndPortsTest
 			(segue.destination as! TestTableViewController).workOrderLineItem = lineItem
 		}
 		
@@ -372,7 +372,7 @@ class WorkOrderLineItemController: UITableViewController, UIImagePickerControlle
 		let changedCell = (sender as! UIView).superview?.superview?.superview as! TextInputTableViewCell
 		let changedIndexPath = self.tableView.indexPath(for: changedCell)
 		
-		log.verbose("Updating at indexPath: \(changedIndexPath)")
+		log.verbose("Updating at indexPath: \(String(describing: changedIndexPath))")
 		switch changedIndexPath!.row {
 		case 1:
 			if let fieldStringValue = changedCell.textField.text {
