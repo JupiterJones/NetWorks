@@ -9,8 +9,9 @@ baseline: spec
           with: [ 
               spec
                 loads: #('Core' 'Development' 'Zinc');
-                repository:
-                    'filetree:///opt/git/JupiterSmalltalk/Seaside/repository' ];
+                repository: 'github://SeasideSt/Seaside:master/repository' ];
+        baseline: 'Parasol'
+          with: [ spec repository: 'github://SeasideSt/Parasol:master/repository' ];
         configuration: 'Magritte3'
           with: [ 
               spec
@@ -60,13 +61,10 @@ baseline: spec
                 loads: #('Core' 'Examples');
                 repository:
                     'http://www.smalltalkhub.com/mc/hkleinsorgen/InfoVis/main' ];
-        baseline: 'Parasol'
-          with: [ spec repository: 'filetree:///opt/git/JupiterSmalltalk/Parasol/repository' ];
         baseline: 'JQueryWidgetKit'
           with: [ spec repository: 'github://JQueryWidgetKit/JQueryWidgetKit/repository' ];
         baseline: 'AdminLTE'
-          with: [ spec repository: 'filetree:///opt/git/JupiterSmalltalk/AdminLTE/repository' ].
-      spec package: 'NetWorks-App-API' ].
+          with: [ spec repository: 'filetree:///opt/git/JupiterSmalltalk/AdminLTE/repository' ] ].
   spec
     for: #'common'
     do: [ 
@@ -102,7 +100,7 @@ baseline: spec
         package: 'NetWorks-Model-Organisation'
           with: [ spec requires: #('NetWorks-Model-Core' 'NetWorks-Model-Contractors') ];
         package: 'NetWorks-Model-Integration'
-          with: [ spec requires: #('NetWorks-Model-Core') ];
+          with: [ spec requires: #('Parasol' 'NetWorks-Model-Core') ];
         package: 'NetWorks-Model-Projects'
           with: [ 
               spec
@@ -141,8 +139,9 @@ baseline: spec
                 requires:
                   #('Mustache' 'NetWorks-UI-Core' 'NetWorks-UI-Help' 'NetWorks-UI-Assets' 'NetWorks-UI-TestTypes' 'NetWorks-UI-Clients' 'NetWorks-UI-Projects' 'NetWorks-UI-Jobs' 'NetWorks-UI-WorkOrders' 'NetWorks-UI-Contractors' 'NetWorks-UI-Integration' 'AdminLTE') ];
         package: 'NetWorks-UI-Announcements';
+        package: 'NetWorks-App-API';
         package: 'NetWorks-App-Core'
-          with: [ spec requires: #('Magritte3AddOns') ];
+          with: [ spec requires: #('Magritte3AddOns' 'NetWorksModel' 'NetWorks-App-API') ];
         package: 'NetWorks-Tests-Model-Core';
         package: 'NetWorks-Tests-Model-Admin'
           with: [ spec requires: #('NetWorks-Model-Admin') ];
