@@ -41,6 +41,12 @@ baseline: spec
               spec
                 loads: #('CI');
                 repository: 'github://GsDevKit/Cryptography:master/repository' ];
+        baseline: 'PharoCompatability'
+          with: [ 
+              spec
+                loads: #('Core');
+                repository:
+                    'github://JupiterSmalltalk/PharoCompatability:additionsForPillar/repository' ];
         configuration: 'FontAwesome'
           with: [ 
               spec
@@ -73,7 +79,7 @@ baseline: spec
         package: 'NetWorks-Model-FileSystem'
           with: [ spec requires: #('NetWorks-Model-Core') ];
         package: 'NetWorks-Model-Core'
-          with: [ spec requires: #('NetWorks-Model-Magritte') ];
+          with: [ spec requires: #('PharoCompatability' 'NetWorks-Model-Magritte') ];
         package: 'NetWorks-Model-Contractors'
           with: [ spec requires: #('NetWorks-Model-Core') ];
         package: 'NetWorks-Model-Jobs'
