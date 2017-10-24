@@ -12,6 +12,11 @@ baseline: spec
                 repository: 'github://SeasideSt/Seaside:master/repository' ];
         baseline: 'Parasol'
           with: [ spec repository: 'github://SeasideSt/Parasol:master/repository' ];
+        baseline: 'NeoCSV'
+          with: [ 
+              spec
+                loads: #('Core');
+                repository: 'github://glassdb/NeoCVS:master/repository' ];
         configuration: 'Magritte3'
           with: [ 
               spec
@@ -106,7 +111,7 @@ baseline: spec
         package: 'NetWorks-Model-Organisation'
           with: [ spec requires: #('NetWorks-Model-Core' 'NetWorks-Model-Contractors') ];
         package: 'NetWorks-Model-Integration'
-          with: [ spec requires: #('Parasol' 'NetWorks-Model-Core') ];
+          with: [ spec requires: #('Parasol' 'NeoCSV' 'NetWorks-Model-Core') ];
         package: 'NetWorks-Model-Projects'
           with: [ 
               spec
