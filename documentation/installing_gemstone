@@ -1,0 +1,47 @@
+# Install NetWorks in GemStone
+
+# Increase memory during the install
+# in gem.conf add a '0' as in the following
+# GEM_TEMPOBJ_CACHE_SIZE = 500000;
+
+GsDeployer deploy: [
+
+	"Load PharoCompatibility and lock it."	
+	Metacello new
+		baseline: 'PharoCompatibility';
+		repository: 'filetree:///opt/git/JupiterSmalltalk/PharoCompatibility/repository';
+		load: #('Core');
+		lock.
+
+	"Load Seaside and lock it. 
+	 This is because other libraries specify different versions of Seaside."
+	Metacello new
+		baseline: 'Seaside3';
+		repository: 'github://SeasideSt/Seaside:master/repository';
+		load: #('Core' 'Development' 'Zinc');
+		lock.
+			
+	"Load Bootstrap and lock it. 
+	 This is because other libraries specify different versions of Bootstrap."	
+	Metacello new
+		configuration: 'Bootstrap';
+		repository: 'http://smalltalkhub.com/mc/TorstenBergmann/Bootstrap/main';
+		version: '0.16.0';
+		load;
+		lock.
+	
+	"Load the NetWorks project and dependencies"
+	Metacello new
+		baseline: 'NetWorks';
+		repository: 'filetree:///opt/git/JupiterJones/NetWorks/repository';
+		load
+]
+
+
+
+
+# Setup Seaside in tODE
+mount /opt/GsDevKit_home/etc/GsDevKit_seaside31/tode /home ss
+ss/seasideWebServer --register=zinc --port=8383
+ss/seasideWebServer --restart
+
