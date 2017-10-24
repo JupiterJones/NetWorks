@@ -5,14 +5,15 @@
 # GEM_TEMPOBJ_CACHE_SIZE = 500000;
 
 GsDeployer deploy: [
-
 	"Load PharoCompatibility and lock it."	
 	Metacello new
 		baseline: 'PharoCompatibility';
 		repository: 'filetree:///opt/git/JupiterSmalltalk/PharoCompatibility/repository';
 		load: #('Core');
 		lock.
+].
 
+GsDeployer deploy: [
 	"Load Seaside and lock it. 
 	 This is because other libraries specify different versions of Seaside."
 	Metacello new
@@ -20,7 +21,9 @@ GsDeployer deploy: [
 		repository: 'github://SeasideSt/Seaside:master/repository';
 		load: #('Core' 'Development' 'Zinc');
 		lock.
-			
+].
+
+GsDeployer deploy: [	
 	"Load Bootstrap and lock it. 
 	 This is because other libraries specify different versions of Bootstrap."	
 	Metacello new
@@ -29,13 +32,15 @@ GsDeployer deploy: [
 		version: '0.16.0';
 		load;
 		lock.
-	
+].
+
+GsDeployer deploy: [
 	"Load the NetWorks project and dependencies"
 	Metacello new
 		baseline: 'NetWorks';
 		repository: 'filetree:///opt/git/JupiterJones/NetWorks/repository';
 		load
-]
+].
 
 
 
