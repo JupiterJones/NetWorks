@@ -143,12 +143,12 @@ baseline: spec
         package: 'NetWorks-UI-Integration'
           with: [ spec requires: #('NetWorks-UI-Core') ];
         package: 'NetWorks-UI-Help'
-          with: [ spec requires: #('NetWorks-UI-Organisation') ];
+          with: [ spec requires: #('NetWorks-UI-Core') ];
         package: 'NetWorks-UI-Organisation'
           with: [ 
               spec
                 requires:
-                  #('Mustache' 'NetWorks-UI-Core' 'NetWorks-UI-Assets' 'NetWorks-UI-TestTypes' 'NetWorks-UI-Clients' 'NetWorks-UI-Projects' 'NetWorks-UI-Jobs' 'NetWorks-UI-WorkOrders' 'NetWorks-UI-Contractors' 'NetWorks-UI-Integration' 'AdminLTE') ];
+                  #('Mustache' 'NetWorks-UI-Core' 'NetWorks-UI-Assets' 'NetWorks-UI-TestTypes' 'NetWorks-UI-Clients' 'NetWorks-UI-Projects' 'NetWorks-UI-Jobs' 'NetWorks-UI-WorkOrders' 'NetWorks-UI-Contractors' 'NetWorks-UI-Integration' 'NetWorks-UI-Help' 'AdminLTE') ];
         package: 'NetWorks-UI-Announcements';
         package: 'NetWorks-App-API';
         package: 'NetWorks-App-Core'
