@@ -1,6 +1,9 @@
 private
 createContractors
-  | contractor firstName email |
+  | contractor firstName email domainName |
+  domainName := (ReadStream on: self model organisation dnsName)
+    upTo: $.;
+    upToEnd.
   contractorNames
     do: [ :contractorName | 
       contractor := self model contractors
@@ -12,7 +15,7 @@ createContractors
                 title: (contractorName at: #'name');
                 yourself) ].
       firstName := (ReadStream on: (contractorName at: #'name')) upTo: $ .
-      email := firstName asLowercase , '@' , self model organisation dnsName.
+      email := firstName asLowercase , '@' , domainName.
       contractor email
         ifNil: [ 
           contractor user

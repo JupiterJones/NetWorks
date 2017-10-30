@@ -1,9 +1,5 @@
 # Install NetWorks in GemStone
 
-# Increase memory during the install
-# in gem.conf add a '0' as in the following
-# GEM_TEMPOBJ_CACHE_SIZE = 500000;
-
 # Setup environment in .bash_profile
 # GemStone
 export GS_HOME=/opt/GsDevKit_home
@@ -11,16 +7,39 @@ export GS_HOME=/opt/GsDevKit_home
 PATH=$GS_HOME/bin:$GS_HOME/etc/GsDevKit_seaside31/bin:$PATH
 
 
+# Permissions
+sudo chgrp www-data /opt/git/JupiterJones/NetWorks/www_root/files/uploads
+chmod g+s /opt/git/JupiterJones/NetWorks/www_root/files/uploads
+setfacl -d -m g::rwx /opt/git/JupiterJones/NetWorks/www_root/files/uploads
+setfacl -d -m o::rx /opt/git/JupiterJones/NetWorks/www_root/files/uploads
+
+sudo chgrp www-data /opt/git/JupiterJones/NetWorks/privateCloud
+chmod g+s /opt/git/JupiterJones/NetWorks/privateCloud
+setfacl -d -m g::rwx /opt/git/JupiterJones/NetWorks/privateCloud
+setfacl -d -m o::rx /opt/git/JupiterJones/NetWorks/privateCloud
+
+
 # Setup GsDevKit
 cd /opt
 git clone git@github.com:GsDevKit/GsDevKit_home.git
 installServerClient
 
-# Terminal
+# Setup seaside
+cd $GS_HOME/etc
+git clone git@github.com:GsDevKit/GsDevKit_seaside31.git
+
+# Download the PDF library in a Terminal
 mkdir /opt/git/ChristianHaider
 cd /opt/git/ChristianHaider
 git clone git@github.com:ChristianHaider/PDFtalk-for-Gemstone.git
 createStone networks 3.3.6
+
+
+# Increase memory during the install
+# in gem.conf add a '0' as in the following
+# GEM_TEMPOBJ_CACHE_SIZE = 500000;
+cd $GS_HOME/server/stones/networks
+vi gem.conf
 
 
 # Topaz (install just before the networks project below)
@@ -34,6 +53,7 @@ input /opt/git/ChristianHaider/PDFtalk-for-Gemstone/PDFtalkTesting.gs
 doit
 PDF primeRuntime
 %
+doit
 System myUserProfile symbolList addLast: PDFtalk
 %
 quit
