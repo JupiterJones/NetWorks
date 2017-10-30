@@ -4,6 +4,42 @@
 # in gem.conf add a '0' as in the following
 # GEM_TEMPOBJ_CACHE_SIZE = 500000;
 
+# Setup environment in .bash_profile
+# GemStone
+export GS_HOME=/opt/GsDevKit_home
+# Seaside
+PATH=$GS_HOME/bin:$GS_HOME/etc/GsDevKit_seaside31/bin:$PATH
+
+
+# Setup GsDevKit
+cd /opt
+git clone git@github.com:GsDevKit/GsDevKit_home.git
+installServerClient
+
+# Terminal
+mkdir /opt/git/ChristianHaider
+cd /opt/git/ChristianHaider
+git clone git@github.com:ChristianHaider/PDFtalk-for-Gemstone.git
+createStone networks 3.3.6
+
+
+# Topaz (install just before the networks project below)
+cd $GS_HOME/server/stones/networks
+. defStone.env
+topaz -l
+
+login
+input /opt/git/ChristianHaider/PDFtalk-for-Gemstone/PDFtalk.gs
+input /opt/git/ChristianHaider/PDFtalk-for-Gemstone/PDFtalkTesting.gs
+doit
+PDF primeRuntime
+%
+System myUserProfile symbolList addLast: PDFtalk
+%
+quit
+
+
+# in tODE workspace
 GsDeployer deploy: [
 	"Load PharoCompatibility and lock it."	
 	Metacello new
@@ -41,7 +77,6 @@ GsDeployer deploy: [
 		repository: 'filetree:///opt/git/JupiterJones/NetWorks/repository';
 		load
 ].
-
 
 
 
