@@ -127,7 +127,7 @@ baseline: spec
         package: 'NetWorks-UI-Admin'
           with: [ spec requires: #('NetWorks-UI-Core' 'NetWorks-UI-Announcements' 'AdminLTE') ];
         package: 'NetWorks-UI-Projects'
-          with: [ spec requires: #('NetWorks-Model-Projects') ];
+          with: [ spec requires: #('NetWorks-UI-Core' 'NetWorks-Model-Projects') ];
         package: 'NetWorks-UI-Contractors'
           with: [ spec requires: #('NetWorks-UI-Core') ];
         package: 'NetWorks-UI-Assets'

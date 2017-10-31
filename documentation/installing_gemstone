@@ -6,17 +6,27 @@ export GS_HOME=/opt/GsDevKit_home
 # Seaside
 PATH=$GS_HOME/bin:$GS_HOME/etc/GsDevKit_seaside31/bin:$PATH
 
+# Private Cloud
+mkdir /opt/efs/privateCloud
+cd /opt/git/JupiterJones/NetWorks
+ln -s /opt/efs/privateCloud
 
-# Permissions
+sudo chgrp www-data /opt/efs/privateCloud
+chmod g+s /opt/efs/privateCloud
+sudo setfacl -d -m g::rwx /opt/efs/privateCloud
+sudo setfacl -d -m o::rx /opt/efs/privateCloud
+
+
+# File upload Permissions
 sudo chgrp www-data /opt/git/JupiterJones/NetWorks/www_root/files/uploads
 chmod g+s /opt/git/JupiterJones/NetWorks/www_root/files/uploads
-setfacl -d -m g::rwx /opt/git/JupiterJones/NetWorks/www_root/files/uploads
-setfacl -d -m o::rx /opt/git/JupiterJones/NetWorks/www_root/files/uploads
+sudo setfacl -d -m g::rwx /opt/git/JupiterJones/NetWorks/www_root/files/uploads
+sudo setfacl -d -m o::rx /opt/git/JupiterJones/NetWorks/www_root/files/uploads
 
 sudo chgrp www-data /opt/git/JupiterJones/NetWorks/privateCloud
 chmod g+s /opt/git/JupiterJones/NetWorks/privateCloud
-setfacl -d -m g::rwx /opt/git/JupiterJones/NetWorks/privateCloud
-setfacl -d -m o::rx /opt/git/JupiterJones/NetWorks/privateCloud
+sudo setfacl -d -m g::rwx /opt/git/JupiterJones/NetWorks/privateCloud
+sudo setfacl -d -m o::rx /opt/git/JupiterJones/NetWorks/privateCloud
 
 
 # Setup GsDevKit
@@ -61,7 +71,7 @@ quit
 
 # in tODE workspace
 GsDeployer deploy: [
-	"Load PharoCompatibility and lock it."	
+	"Load PharoCompatibility and lock it. Check it is loaded in the project list - it may need to be loaded twice ?!?"	
 	Metacello new
 		baseline: 'PharoCompatibility';
 		repository: 'filetree:///opt/git/JupiterSmalltalk/PharoCompatibility/repository';
