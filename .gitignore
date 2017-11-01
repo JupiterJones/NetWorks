@@ -17,6 +17,9 @@ SqueakDebug.log
 /github-cache
 github-*.zip
 
+# NetWork privateCloud
+/privateCloud
+
 # OS stuff
 .DS_Store
 .DS_Store?
