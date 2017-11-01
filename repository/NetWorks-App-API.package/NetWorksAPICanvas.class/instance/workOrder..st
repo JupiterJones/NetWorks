@@ -9,7 +9,7 @@ workOrder: workOrder
         key: 'job' value: [ self job: workOrder job ];
         key: 'workflow' value: workOrder workflow title;
         key: 'uri' value: workOrder uri;
-        key: 'hasPreStart' value: workOrder preStartDocumentForTodayEists;
+        key: 'hasPreStart' value: workOrder preStartDocumentForTodayExists;
         key: 'preStartDocumentNameForToday'
           value: workOrder preStartDocumentNameForToday;
         key: 'numberOfLineItems' value: workOrder lineItems size;
