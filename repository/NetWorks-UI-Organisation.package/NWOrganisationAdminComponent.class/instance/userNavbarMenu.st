@@ -35,8 +35,9 @@ userNavbarMenu
                       canvas tbsButton
                         beDefault;
                         callback: [ 
-                              self session logout.
-                              self session unregister ];
+                              self session
+                                logout;
+                                redirect ];
                         with: 'Sign Out' ] ] ];
     menuItems: nil;
     menuContent: nil;

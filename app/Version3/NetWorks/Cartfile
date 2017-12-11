@@ -1,0 +1,14 @@
+# Alamofire version 4.5
+github "Alamofire/Alamofire" >= 4.5
+github "Alamofire/AlamofireImage" >= 3.2
+github "Alamofire/AlamofireNetworkActivityIndicator" >= 2.2
+
+# Keychain
+github "marketplacer/keychain-swift" ~> 10.0
+
+# Logging
+github "DaveWoodCom/XCGLogger" ~> 4.0.0
+
+# Sync
+github "3lvis/Sync" ~> 4.0
+github "3lvis/Networking" ~> 4.1

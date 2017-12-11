@@ -6,6 +6,15 @@ github "Alamofire/AlamofireNetworkActivityIndicator" >= 2.2
 # RESToFire
 github "Restofire/Restofire" ~> 2.2
 
+# Swift Hash
+github "onmyway133/SwiftHash"
+
+# Cache
+github "hyperoslo/Cache"
+
+# Imaginary
+github "hyperoslo/Imaginary"
+
 # SwiftyJSON
 github "SwiftyJSON/SwiftyJSON" >= 3.1
 

@@ -10,6 +10,8 @@ import UIKit
 import Foundation
 import Alamofire
 import AlamofireImage
+import Cache
+import Imaginary
 import Restofire
 import SwiftyJSON
 import XCGLogger
@@ -61,6 +63,8 @@ class NetWorksAPI {
 			log.info("Network Status Changed: \(status)")
 		}
 		networkManager?.startListening()
+		
+		self.configureStorage()
 	}
 
 	// MARK: - Connecting
@@ -276,10 +280,97 @@ class NetWorksAPI {
 	}
 	
 	
+	// MARK: - Managing Image
+	/*
+	
+	When an image is taken, it is saved with metadata in the upload directory.
+	When the user requests it, or when a WiFi network is available, any images in the uploads directory are transferred to the server.
+	
+	Images are cached locally at 2 sizes: thumbnail (64x64) and display (1024x1024) in the cache
+	thumbnail (imageName_thumbnail)
+	display (imageName_display)
+	
+	When a work order is loaded, any images that are no longer referenced, are removed from cache.
+	If there is no local cache, a placeholder image is displayed
+	If the user requests it, the image is downloaded and thumbnail and display versions are created.
+	
+	When the app comes into the foreground, if there are images ready to upload, upload them.
+	
+	*/
+	
+	var storage: Storage?
+	
+	func configureStorage() {
+		let diskConfig = DiskConfig(
+			// The name of disk storage, this will be used as folder name within directory
+			name: "NetWorks",
+			// Expiry date that will be applied by default for every added object
+			// if it's not overridden in the `setObject(forKey:expiry:)` method
+			expiry: .date(Date().addingTimeInterval(30*24*3600)),
+			// Maximum size of the disk cache storage (in bytes)
+			maxSize: 10000,
+			// Where to store the disk cache. If nil, it is placed in `cachesDirectory` directory.
+			directory: try! FileManager.default.url(for: .cachesDirectory, in: .userDomainMask,
+			                                        appropriateFor: nil, create: true).appendingPathComponent("NetWorksCache"),
+			// Data protection is used to store files in an encrypted format on disk and to decrypt them on demand
+			protectionType: .none
+		)
+		let memoryConfig = MemoryConfig(
+			// Expiry date that will be applied by default for every added object
+			// if it's not overridden in the `setObject(forKey:expiry:)` method
+			expiry: .date(Date().addingTimeInterval(2*60)),
+			/// The maximum number of objects in memory the cache should hold
+			countLimit: 50,
+			/// The maximum total cost that the cache can hold before it starts evicting objects
+			totalCostLimit: 0
+		)
+		
+		do {
+		 storage = try Storage(diskConfig: diskConfig, memoryConfig: memoryConfig)
+		} catch {
+			log.error("Error creating cache: \(error)")
+		}
+
+	}
 	
 	
+	func uploadImage(workOrderLineItem: NWWorkOrderLineItem, image: Image, imageName: String) {
+		
+		// Save image to upload directory
+		let imageData = UIImageJPEGRepresentation(image, 0.6)
+		let imagePath =  try! FileManager.default.url(for: .documentDirectory , in: .userDomainMask,
+		                                              appropriateFor: nil, create: true).appendingPathComponent("privateCloud")
+		let imageUrl = imagePath.appendingPathComponent(imageName)
+		let filemgr = FileManager.default
+		
+		do {
+			try filemgr.createDirectory(at: imagePath, withIntermediateDirectories: true, attributes: nil)
+		} catch let error as NSError {
+			log.error("Failed to create directory: \(error.localizedDescription)")
+		}
+		
+		do {
+			try imageData?.write(to: imageUrl)
+		} catch {
+			log.error("Failed to save file: \(String(describing: imageUrl))")
+		}
+		
+		// Create and cache thumbnails and display images
+		
+		
+		
+		NWPostWorkOrderLineItemImageService(workOrderLineItem: workOrderLineItem, image: image).executeTask() {
+			guard let model = $0.result.value else { return }
+			log.verbose("saveLineItemImage - result: \(model)")
+		}
+	}
+	
+	func uploadNewImages() {
+		// Upload all images in the uploads directory
+	}
 	
 }
+
 
 // MARK: - API Calls
 

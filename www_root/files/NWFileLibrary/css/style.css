@@ -102,8 +102,11 @@ table.report tbody tr:hover td:last-child, .reportComponent table tbody tr:hover
 
 /* NetWorks brand */
 .logo-lg img, .logo-mini img {
-  width: auto;
   max-height: 40px;
+}
+
+.login-logo img {
+  width: 100%;
 }
 
 .authCode {

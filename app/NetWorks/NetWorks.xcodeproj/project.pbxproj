@@ -34,6 +34,9 @@
 		CE5B3C921F0B493600D4061B /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B3C911F0B493600D4061B /* TestTableViewController.swift */; };
 		CE5B3C941F0C974100D4061B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B3C931F0C974100D4061B /* CameraViewController.swift */; };
 		CE5B3C981F10C6E800D4061B /* TestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B3C971F10C6E800D4061B /* TestResult.swift */; };
+		CE805D421FBD0798009E92CC /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE805D411FBD0798009E92CC /* Cache.framework */; };
+		CE805D441FBD079F009E92CC /* Imaginary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE805D431FBD079F009E92CC /* Imaginary.framework */; };
+		CE805D461FC2A724009E92CC /* SwiftHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE805D451FC2A724009E92CC /* SwiftHash.framework */; };
 		CE8A276D1EB9618E007ED82C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A276C1EB9618E007ED82C /* ProfileViewController.swift */; };
 		CE9E14671EFF802800468A5E /* JobLineItemTypesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E14661EFF802800468A5E /* JobLineItemTypesController.swift */; };
 		CE9E14691F00A24D00468A5E /* JobLineItemTypeSearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E14681F00A24D00468A5E /* JobLineItemTypeSearchResultsController.swift */; };
@@ -95,6 +98,9 @@
 		CE5B3C911F0B493600D4061B /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestTableViewController.swift; path = UserInterface/TestTableViewController.swift; sourceTree = "<group>"; };
 		CE5B3C931F0C974100D4061B /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = UserInterface/CameraViewController.swift; sourceTree = "<group>"; };
 		CE5B3C971F10C6E800D4061B /* TestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResult.swift; sourceTree = "<group>"; };
+		CE805D411FBD0798009E92CC /* Cache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cache.framework; path = Carthage/Build/iOS/Cache.framework; sourceTree = "<group>"; };
+		CE805D431FBD079F009E92CC /* Imaginary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Imaginary.framework; path = Carthage/Build/iOS/Imaginary.framework; sourceTree = "<group>"; };
+		CE805D451FC2A724009E92CC /* SwiftHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHash.framework; path = Carthage/Build/iOS/SwiftHash.framework; sourceTree = "<group>"; };
 		CE8A276C1EB9618E007ED82C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = UserInterface/ProfileViewController.swift; sourceTree = "<group>"; };
 		CE9E14661EFF802800468A5E /* JobLineItemTypesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobLineItemTypesController.swift; path = UserInterface/JobLineItemTypesController.swift; sourceTree = "<group>"; };
 		CE9E14681F00A24D00468A5E /* JobLineItemTypeSearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobLineItemTypeSearchResultsController.swift; path = UserInterface/JobLineItemTypeSearchResultsController.swift; sourceTree = "<group>"; };
@@ -134,6 +140,9 @@
 				CEF418951E725E66009BCA1D /* AlamofireImage.framework in Frameworks */,
 				CEF418961E725E66009BCA1D /* AlamofireNetworkActivityIndicator.framework in Frameworks */,
 				CEF4189C1E7274E2009BCA1D /* Restofire.framework in Frameworks */,
+				CE805D461FC2A724009E92CC /* SwiftHash.framework in Frameworks */,
+				CE805D421FBD0798009E92CC /* Cache.framework in Frameworks */,
+				CE805D441FBD079F009E92CC /* Imaginary.framework in Frameworks */,
 				CEF418A51E72A381009BCA1D /* MapKit.framework in Frameworks */,
 				CEF418971E725E66009BCA1D /* SwiftyJSON.framework in Frameworks */,
 				CEF4189B1E7274E2009BCA1D /* KeychainSwift.framework in Frameworks */,
@@ -257,6 +266,9 @@
 		CEF4188F1E725E65009BCA1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE805D451FC2A724009E92CC /* SwiftHash.framework */,
+				CE805D431FBD079F009E92CC /* Imaginary.framework */,
+				CE805D411FBD0798009E92CC /* Cache.framework */,
 				CEDA31F51F315E7A00644076 /* EVReflection.framework */,
 				CE0CE5401F1C53EA00684164 /* ILPDFKit.framework */,
 				CE12512F1EA4547B005CB9BF /* FontAwesome.framework */,
@@ -420,6 +432,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ILPDFKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/EVReflection.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Cache.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Imaginary.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftHash.framework",
 			);
 			outputPaths = (
 			);

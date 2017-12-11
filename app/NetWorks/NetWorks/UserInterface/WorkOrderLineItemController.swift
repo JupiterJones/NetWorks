@@ -217,11 +217,11 @@ class WorkOrderLineItemController: UITableViewController, UIImagePickerControlle
 		let testType = String(describing: type(of: object))
 		
 		let startIndex = testType.index(testType.startIndex, offsetBy: 2)
-		let testName = testType.substring(from: startIndex)
+		let testName = testType.suffix(from: startIndex)
 		
 		var result = ""
-		for char in testName.characters {
-			if (set.contains(UnicodeScalar(String(char))!) && result.characters.count != 0) {
+		for char in testName {
+			if (set.contains(UnicodeScalar(String(char))!) && result.count != 0) {
 				result += " "
 			}
 			result += String(char)

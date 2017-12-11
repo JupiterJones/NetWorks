@@ -267,12 +267,21 @@ class CameraViewController: UIViewController, UIScrollViewDelegate, UIImagePicke
 		return result
 	}
 	
+	func newImageTitle() -> String {
+		let j = workOrderLineItem?.workOrder?.job?.uri!
+		let wo = workOrderLineItem!.uri!
+		let fc = String(workOrderLineItem!.files.count + 1)
+		// let cn = ""
+		//return j! + "-" + wo + "-" + cn + "." + fc
+		return j! + "-" + wo + "." + fc
+	}
+	
 	func newImageName() -> String {
-		return workOrderLineItem!.uri! + "." + String(workOrderLineItem!.files.count + 1) + ".jpeg"
+		return newImageTitle() + ".jpeg"
 	}
 
 	func newThumbnailName() -> String {
-		return workOrderLineItem!.uri! + "." + String(workOrderLineItem!.files.count + 1) + ".thumb.jpeg"
+		return newImageTitle() + ".thumb.jpeg"
 	}
 
 	
@@ -354,7 +363,7 @@ class CameraViewController: UIViewController, UIScrollViewDelegate, UIImagePicke
 			"lineItem": workOrderLineItem?.id
 		]
 		
-		let imageData = UIImageJPEGRepresentation(self.imageView.image!, 0.6)
+		let imageData = UIImageJPEGRepresentation(checkImage, 0.6)
 		let imagePath = workOrderLineItem?.localDirectory()
 		let imageUrl = imagePath?.appendingPathComponent(newImageName())
 		let filemgr = FileManager.default

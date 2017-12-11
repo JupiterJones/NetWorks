@@ -1,8 +1,13 @@
 /* NetWorks brand */
 .logo-lg, .logo-mini {
 	img {
-		width: auto;
 		max-height: 40px;
+	}
+}
+
+.login-logo {
+	img {
+		width: 100%;
 	}
 }
 
