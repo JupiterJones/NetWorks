@@ -38,8 +38,8 @@ class NetWorksAPI {
 		let diskCapacity = 100 * 1024 * 1024; // 100 MB
 		let cache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: "networks_cache")
 		
-		//let apiHost = productionApiHost
-		let apiHost = developmentApiHost
+		let apiHost = productionApiHost
+		//let apiHost = developmentApiHost
 		
 		Restofire.defaultConfiguration.baseURL = "http://\(apiHost)/1.0/"
 		Restofire.defaultConfiguration.headers = ["Content-Type": "application/json"]

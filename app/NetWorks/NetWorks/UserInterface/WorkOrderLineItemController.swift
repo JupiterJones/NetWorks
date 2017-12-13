@@ -71,7 +71,7 @@ class WorkOrderLineItemController: UITableViewController, UIImagePickerControlle
 			ac.addAction(UIAlertAction(title: "OK", style: .default))
 			present(ac, animated: true)
 		} else {
-			_ = self.navigationController?.popToRootViewController(animated: true)
+			_ = self.navigationController?.popViewController(animated: true)
 		}
 	}
 

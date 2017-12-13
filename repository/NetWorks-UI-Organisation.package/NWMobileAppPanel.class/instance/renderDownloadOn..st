@@ -1,7 +1,7 @@
 rendering
 renderDownloadOn: canvas
   | appVersion |
-  appVersion := '2.2.3'.
+  appVersion := '2.2.4'.
   canvas heading
     level4;
     with: 'Version ' , appVersion.
