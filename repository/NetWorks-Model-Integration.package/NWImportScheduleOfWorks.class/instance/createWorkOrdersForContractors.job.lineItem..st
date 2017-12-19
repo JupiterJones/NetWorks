@@ -14,7 +14,7 @@ createWorkOrdersForContractors: contractors job: job lineItem: lineItem
               (NWWorkOrder new
                 contractor: contractor;
                 job: job;
-                title;
+                title: 'WO-' , job title;
                 yourself) ].
       workOrder lineItems
         add:

@@ -10,7 +10,7 @@ createOrFindWorkOrderWithJob: job contractor: contractor
         add:
           ((wo := NWWorkOrder new)
             job: job;
-            title: job title;
+            title: 'WO-' , job title;
             comment: job comment;
             contractor: contractor;
             hasChanged:
