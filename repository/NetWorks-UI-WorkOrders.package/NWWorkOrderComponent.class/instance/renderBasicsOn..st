@@ -11,4 +11,5 @@ renderBasicsOn: canvas
               self
                 renderDescriptionsWithLabels:
                   #('Asset' 'Workflow' 'Date Scheduled' 'Duration' 'DateComplete')
-                on: canvas ] ]
+                on: canvas ] ].
+  self renderLineItemsOn: canvas

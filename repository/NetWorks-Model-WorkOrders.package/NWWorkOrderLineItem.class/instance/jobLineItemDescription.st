@@ -5,7 +5,8 @@ jobLineItemDescription
   description := MASingleOptionDescription new
     accessor: #'jobLineItem';
     options: self workOrder job lineItems;
-    reference: NWJobLineItem new lineItemTypeTitleDescription asContainer;
+    reference:
+        NWJobLineItem new lineItemTypeTitleAndCommentDescription asContainer;
     label: 'Job Line Item';
     comment:
         'Select the Job Line Item that this Work Order Line Item is based on.';

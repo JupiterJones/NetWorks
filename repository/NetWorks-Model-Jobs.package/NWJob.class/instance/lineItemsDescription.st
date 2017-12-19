@@ -7,7 +7,7 @@ lineItemsDescription
     accessor: #'lineItems';
     classes: {NWJobLineItem};
     reference:
-        template lineItemTypeTitleDescription , template quantityDescription
+        template lineItemTypeTitleAndCommentDescription , template quantityDescription
             , template quantityAssignedDescription
             , template quantityCompleteDescription;
     propertyAt: #'objectDecorationClasses' put: {AdminLTEBoxDecoration};

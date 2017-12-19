@@ -1,7 +1,5 @@
 private
-jobForAsset: asset node: node type: jobType
-  "Default to top level location - TODO: Work out what this should be"
-
+jobForAssetOLD: asset node: node type: jobType
   ^ jobs
     detect: [ :j | j title = asset ]
     ifNone: [ 
@@ -12,6 +10,5 @@ jobForAsset: asset node: node type: jobType
             comment: 'Node: ' , node;
             project: project;
             jobType: jobType;
-            asset: asset;
-            location: self model locations anyOny;
+            asset: (self assetForAsset: asset node: node);
             yourself) ]

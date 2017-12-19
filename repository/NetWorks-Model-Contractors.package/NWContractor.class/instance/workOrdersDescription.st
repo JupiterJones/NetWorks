@@ -9,9 +9,9 @@ workOrdersDescription
     cssClass: 'reportComponent';
     componentClass: NWMagritteOneToManyComponent;
     reference:
-        template locationTitleDescription , template clientTitleDescription
-            , template jobTypeTitleDescription
-            , template scheduleDateDescription;
+        template titleDescription , template clientTitleDescription
+            , template scheduleDateDescription
+            , template percentageCompleteDescription;
     label: 'Work Orders';
     priority: 600;
     beSorted;

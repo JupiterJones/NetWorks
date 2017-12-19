@@ -1,10 +1,8 @@
 descriptions
-jobLineItemTypeTitleDescription
-  "<magritteDescription>"
-
+lineItemTypeTitleAndCommentDescription
+  <magritteDescription>
   ^ MAStringDescription new
-    accessor:
-        (MAChainAccessor accessors: #(#'jobLineItem' #'lineItemType' #'title'));
+    accessor: #'lineItemTypeTitleAndComment';
     label: 'Type';
     priority: 100;
     beRequired;
