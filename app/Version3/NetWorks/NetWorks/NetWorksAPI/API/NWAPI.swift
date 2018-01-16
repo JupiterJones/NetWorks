@@ -12,8 +12,8 @@ public class NWAPI {
 	
 	public static let shared = NWAPI()
 	
-	private static let developmentUrl = "http://dev.api.networks.tai.earth/API/2.0"
-	private static let productionUrl = "http://api.networks.tai.earth/API/2.0"
+	private static let developmentUrl = "http://dev.api.networks.tai.earth/2.0"
+	private static let productionUrl = "http://api.networks.tai.earth/2.0"
 	
 	static let baseUrl = developmentUrl
 	//static let baseUrl = self.productionUrl

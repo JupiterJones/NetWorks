@@ -3,7 +3,7 @@ getProjects
   "Answer the model"
 
   <get>
-  <path: '/Projects'>
+  <path: '/projects'>
   <produces: 'application/json'>
   ^ NetWorksAPICanvas builder
     render: [ :canvas | self renderProjectsOn: canvas ]

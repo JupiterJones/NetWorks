@@ -49,9 +49,15 @@ public class NWProjectSync {
 	}
 	
 	func syncUsingAlamofire(completion: @escaping (_ result: VoidResult) -> ()) {
-		Alamofire.request(NWAPI.baseUrl + "/Projects")
-			.authenticate(user: "authCode", password: "1155")
+		var headers: HTTPHeaders = [:]
+		if let authorizationHeader = Request.authorizationHeader(user: "apiKey", password: "8ac034b7-6f73-475f-b7e0-545853f4338f") {
+			headers[authorizationHeader.key] = authorizationHeader.value
+		}
+		
+		Alamofire.request(NWAPI.baseUrl + "/projects", headers: headers)
 			.responseJSON { response in
+			debugPrint(response.request)
+			debugPrint(response)
 			if let jsonObject = response.result.value, let projectsJSON = jsonObject as? [[String: Any]] {
 				self.dataStack.sync(projectsJSON, inEntityNamed: NWProject.entity().name!) { error in
 					completion(.success)

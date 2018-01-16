@@ -61,9 +61,9 @@ class ProjectsViewController: UITableViewController {
 	}
 
 	// MARK: - Segues
-/*
+
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier == "showDetail" {
+		if segue.identifier == "showProject" {
 		    if let indexPath = tableView.indexPathForSelectedRow {
 		        let object = objects[indexPath.row] as!
 		        let controller = (segue.destination as! UINavigationController).topViewController as! ProjectViewController
@@ -73,7 +73,7 @@ class ProjectsViewController: UITableViewController {
 		    }
 		}
 	}
-*/
+
 	// MARK: - Table View
 
 	override func numberOfSections(in tableView: UITableView) -> Int {

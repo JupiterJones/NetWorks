@@ -3,5 +3,6 @@
 		"apiVersion" : "jupiter 03/13/2017 16:17",
 		"appVersions" : "jupiter 03/13/2017 16:17" },
 	"instance" : {
-		"getProjects" : "jupiter 12/10/2017 16:04",
-		"renderProjectsOn:" : "jupiter 12/10/2017 17:28" } }
+		"getProjects" : "jupiter 01/03/2018 17:20",
+		"handleFiltered:" : "jupiter 01/04/2018 14:14",
+		"renderProjectsOn:" : "jupiter 01/06/2018 02:46" } }

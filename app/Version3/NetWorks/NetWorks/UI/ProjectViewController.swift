@@ -33,7 +33,7 @@ class ProjectViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-	var detailItem: NSDate? {
+	var detailItem: NWProject? {
 		didSet {
 		    // Update the view.
 		    configureView()
