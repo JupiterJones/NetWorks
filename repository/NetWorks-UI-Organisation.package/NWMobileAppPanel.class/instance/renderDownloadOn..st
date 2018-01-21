@@ -14,6 +14,18 @@ renderDownloadOn: canvas
   canvas
     paragraph: [ 
       canvas anchor
+        url: 'https://admin.5smiths.com.au/app/XC_iOS_Ad_Hoc_.mobileprovision';
+        with: [ 
+              (canvas tag: 'i')
+                fontAwesome;
+                fontAwesome2x;
+                fontAwesomeShieldIcon.
+              canvas
+                space;
+                text: 'iOS Provisioning Profile AdHoc' ] ].
+  canvas
+    paragraph: [ 
+      canvas anchor
         url:
             'https://admin.5smiths.com.au/app/XC_iOS_Ad_Hoc_earthmynationnetworks.mobileprovision';
         with: [ 
@@ -23,7 +35,7 @@ renderDownloadOn: canvas
                 fontAwesomeShieldIcon.
               canvas
                 space;
-                text: 'iOS Provisioning Profile' ] ].
+                text: 'iOS Provisioning Profile NetWorks' ] ].
   canvas
     paragraph: [ 
       canvas anchor
