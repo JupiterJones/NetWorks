@@ -66,7 +66,7 @@ class ProjectsViewController: UITableViewController {
 		if segue.identifier == "showProject" {
 		    if let indexPath = tableView.indexPathForSelectedRow {
 		        let object = objects[indexPath.row] as!
-		        let controller = (segue.destination as! UINavigationController).topViewController as! ProjectViewController
+				let controller = (segue.destination as! UINavigationController).topViewController as! ProjectViewController
 		        controller.detailItem = object
 		        controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
 		        controller.navigationItem.leftItemsSupplementBackButton = true

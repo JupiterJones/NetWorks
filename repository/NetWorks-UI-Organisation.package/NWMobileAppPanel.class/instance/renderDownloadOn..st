@@ -8,7 +8,22 @@ renderDownloadOn: canvas
   canvas
     paragraph:
       'You must be browsing this website on your mobile device (iPhone or iPad) for the link below to automatically install the '
-        , self model organisation title , ' NetWorks App.'.
+        , self model organisation title
+        ,
+          ' NetWorks App. First install the iOS Provisioning Profile, then the App.'.
+  canvas
+    paragraph: [ 
+      canvas anchor
+        url:
+            'https://admin.5smiths.com.au/app/XC_iOS_Ad_Hoc_earthmynationnetworks.mobileprovision';
+        with: [ 
+              (canvas tag: 'i')
+                fontAwesome;
+                fontAwesome2x;
+                fontAwesomeShieldIcon.
+              canvas
+                space;
+                text: 'iOS Provisioning Profile' ] ].
   canvas
     paragraph: [ 
       canvas anchor

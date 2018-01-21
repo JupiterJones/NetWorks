@@ -56,17 +56,17 @@ public class NWProjectSync {
 		
 		Alamofire.request(NWAPI.baseUrl + "/projects", headers: headers)
 			.responseJSON { response in
-			debugPrint(response.request)
-			debugPrint(response)
-			if let jsonObject = response.result.value, let projectsJSON = jsonObject as? [[String: Any]] {
-				self.dataStack.sync(projectsJSON, inEntityNamed: NWProject.entity().name!) { error in
-					completion(.success)
+				debugPrint(response.request as Any)
+				debugPrint(response)
+				if let jsonObject = response.result.value, let projectsJSON = jsonObject as? [[String: Any]] {
+					self.dataStack.sync(projectsJSON, inEntityNamed: NWProject.entity().name!) { error in
+						completion(.success)
+					}
+				} else if let error = response.error {
+					completion(.failure(error as NSError))
+				} else {
+					fatalError("No error, no failure")
 				}
-			} else if let error = response.error {
-				completion(.failure(error as NSError))
-			} else {
-				fatalError("No error, no failure")
-			}
 		}
 	}
 }
