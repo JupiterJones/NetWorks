@@ -11,7 +11,7 @@ import Foundation
 import Alamofire
 import AlamofireImage
 import Cache
-import Imaginary
+//import Imaginary
 import Restofire
 import SwiftyJSON
 import XCGLogger

@@ -35,7 +35,6 @@
 		CE5B3C941F0C974100D4061B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B3C931F0C974100D4061B /* CameraViewController.swift */; };
 		CE5B3C981F10C6E800D4061B /* TestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B3C971F10C6E800D4061B /* TestResult.swift */; };
 		CE805D421FBD0798009E92CC /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE805D411FBD0798009E92CC /* Cache.framework */; };
-		CE805D441FBD079F009E92CC /* Imaginary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE805D431FBD079F009E92CC /* Imaginary.framework */; };
 		CE805D461FC2A724009E92CC /* SwiftHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE805D451FC2A724009E92CC /* SwiftHash.framework */; };
 		CE8A276D1EB9618E007ED82C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A276C1EB9618E007ED82C /* ProfileViewController.swift */; };
 		CE9E14671EFF802800468A5E /* JobLineItemTypesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E14661EFF802800468A5E /* JobLineItemTypesController.swift */; };
@@ -142,7 +141,6 @@
 				CEF4189C1E7274E2009BCA1D /* Restofire.framework in Frameworks */,
 				CE805D461FC2A724009E92CC /* SwiftHash.framework in Frameworks */,
 				CE805D421FBD0798009E92CC /* Cache.framework in Frameworks */,
-				CE805D441FBD079F009E92CC /* Imaginary.framework in Frameworks */,
 				CEF418A51E72A381009BCA1D /* MapKit.framework in Frameworks */,
 				CEF418971E725E66009BCA1D /* SwiftyJSON.framework in Frameworks */,
 				CEF4189B1E7274E2009BCA1D /* KeychainSwift.framework in Frameworks */,
@@ -433,7 +431,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ILPDFKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/EVReflection.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Cache.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Imaginary.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftHash.framework",
 			);
 			outputPaths = (
