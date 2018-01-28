@@ -19,4 +19,4 @@ canNotBeDeletedErrorMessage
             nextPutAll: ' Work Order'.
           workOrders size > 1
             ifTrue: [ stream nextPutAll: 's' ] ].
-      stream nextPutAll: '. It can not be deleted.' ]
+      stream nextPutAll: '.' ]

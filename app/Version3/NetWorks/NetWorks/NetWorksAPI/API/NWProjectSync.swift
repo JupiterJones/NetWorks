@@ -20,7 +20,6 @@ public class NWProjectSync {
 		Networking(baseURL: NWAPI.baseUrl)
 	}()
 	
-	
 	init() {
 		self.dataStack = DataStack(modelName: "NetWorksDataModel")
 	}

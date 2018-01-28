@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import CoreData
 
 class ProjectViewController: UIViewController {
 	
-	@IBOutlet weak var detailDescriptionLabel: UILabel!
+	@IBOutlet weak var detailCommentLabel: UILabel!
 
+	var detailItem: NWProject? {
+		didSet {
+			// Update the view.
+			configureView()
+		}
+	}
 
 	func configureView() {
 		// Update the user interface for the detail item.
 		if let detail = detailItem {
-		    if let label = detailDescriptionLabel {
-		        label.text = detail.description
+		    if let label = detailCommentLabel {
+		        label.text = detail.comment
 		    }
 		}
 	}
@@ -33,12 +40,6 @@ class ProjectViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-	var detailItem: NWProject? {
-		didSet {
-		    // Update the view.
-		    configureView()
-		}
-	}
 
 }
 

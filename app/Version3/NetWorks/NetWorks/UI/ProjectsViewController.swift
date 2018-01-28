@@ -65,7 +65,7 @@ class ProjectsViewController: UITableViewController {
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "showProject" {
 		    if let indexPath = tableView.indexPathForSelectedRow {
-		        let object = objects[indexPath.row] as!
+		        let object = objects[indexPath.row]
 				let controller = (segue.destination as! UINavigationController).topViewController as! ProjectViewController
 		        controller.detailItem = object
 		        controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem

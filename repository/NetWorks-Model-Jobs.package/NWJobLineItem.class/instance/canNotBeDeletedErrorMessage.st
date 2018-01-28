@@ -11,4 +11,4 @@ canNotBeDeletedErrorMessage
             , ' work order'.
       assignments size > 1
         ifTrue: [ stream nextPut: $s ].
-      stream nextPutAll: '. It can not be deleted.' ]
+      stream nextPutAll: '.' ]
