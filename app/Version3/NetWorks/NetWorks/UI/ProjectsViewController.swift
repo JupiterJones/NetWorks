@@ -1,5 +1,5 @@
 //
-//  MasterViewController.swift
+//  ProjectsViewController.swift
 //  NetWorks
 //
 //  Created by Jupiter on 7/12/17.
@@ -8,38 +8,46 @@
 
 import UIKit
 import CoreData
+import FontAwesome
 
 class ProjectsViewController: UITableViewController {
+	
+	let projectIcon = UIImage.fontAwesomeIcon(name: .briefcase, textColor: UIColor.gray, size: CGSize(width: 32, height: 32))
 
 	var projectViewController: ProjectViewController? = nil
-	var objects = [NWProject]()
+	var projects = [NWProject]()
 	let api = NWAPI.shared.projectsApi()
-	
+		
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		navigationItem.leftBarButtonItem = editButtonItem
 
-		let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-		navigationItem.rightBarButtonItem = addButton
+		//let actionsButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
+		//navigationItem.rightBarButtonItem = addButton
+		
 		if let split = splitViewController {
 		    let controllers = split.viewControllers
+			self.refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
 		    projectViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? ProjectViewController
 		}
 		
-		self.objects = api.projects()
-		self.refresh()
+		
+		self.projects = api.projects()
+		self.refresh(sender: self)
 	}
 	
-	func refresh() {
+	@objc
+	func refresh(sender: Any) {
 		api.sync() { result in
 			switch result {
 			case .success:
-				self.objects = self.api.projects()
+				self.projects = self.api.projects()
 				self.tableView.reloadData()
 			case .failure(let error):
 				print(error)
 			}
+			self.refreshControl?.endRefreshing()
 		}
 	}
 
@@ -55,7 +63,7 @@ class ProjectsViewController: UITableViewController {
 
 	@objc
 	func insertNewObject(_ sender: Any) {
-		objects.insert(NWProject(), at: 0)
+		projects.insert(NWProject(), at: 0)
 		let indexPath = IndexPath(row: 0, section: 0)
 		tableView.insertRows(at: [indexPath], with: .automatic)
 	}
@@ -65,9 +73,9 @@ class ProjectsViewController: UITableViewController {
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "showProject" {
 		    if let indexPath = tableView.indexPathForSelectedRow {
-		        let object = objects[indexPath.row]
+		        let object = projects[indexPath.row]
 				let controller = (segue.destination as! UINavigationController).topViewController as! ProjectViewController
-		        controller.detailItem = object
+		        controller.project = object
 		        controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
 		        controller.navigationItem.leftItemsSupplementBackButton = true
 		    }
@@ -81,14 +89,16 @@ class ProjectsViewController: UITableViewController {
 	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return objects.count
+		return projects.count
 	}
 
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+		let cell = tableView.dequeueReusableCell(withIdentifier: "projectCell", for: indexPath)
 
-		let object = objects[indexPath.row]
-		cell.textLabel!.text = object.title
+		let project = projects[indexPath.row]
+		cell.textLabel!.text = project.title!
+		cell.detailTextLabel!.text = project.comment
+		cell.imageView?.image = projectIcon
 		return cell
 	}
 
@@ -99,7 +109,7 @@ class ProjectsViewController: UITableViewController {
 
 	override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
 		if editingStyle == .delete {
-		    objects.remove(at: indexPath.row)
+		    projects.remove(at: indexPath.row)
 		    tableView.deleteRows(at: [indexPath], with: .fade)
 		} else if editingStyle == .insert {
 		    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.

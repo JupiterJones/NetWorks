@@ -20,7 +20,7 @@ baseline: spec
         configuration: 'Magritte3'
           with: [ 
               spec
-                versionString: '3.5.1';
+                versionString: '3.5.2';
                 repository:
                     'http://www.smalltalkhub.com/mc/Magritte/Magritte3/main' ];
         configuration: 'Magritte3AddOns'

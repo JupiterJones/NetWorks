@@ -1,0 +1,14 @@
+{
+	"category" : "NetWorks-App-API",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NetWorksAPI20Canvas",
+	"pools" : [
+		 ],
+	"super" : "WAJsonCanvas",
+	"type" : "normal" }

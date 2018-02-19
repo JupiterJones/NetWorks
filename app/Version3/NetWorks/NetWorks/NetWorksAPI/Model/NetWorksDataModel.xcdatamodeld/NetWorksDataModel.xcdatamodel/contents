@@ -1,11 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1114" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="NWProject" representedClassName="NWProject" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="NWClient" representedClassName="NWClient" syncable="YES" codeGenerationType="class">
         <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="NWJob" representedClassName="NWJob" syncable="YES" codeGenerationType="class">
+        <attribute name="asset" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uri" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWLocation" syncable="YES"/>
+        <relationship name="workOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWWorkOrder" inverseName="job" inverseEntity="NWWorkOrder" syncable="YES"/>
+    </entity>
+    <entity name="NWJobLineItem" representedClassName="NWJobLineItem" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lineItemType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWJobLineItemType" syncable="YES"/>
+        <relationship name="workOrderLineItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWWorkOrderLineItem" inverseName="jobLineItem" inverseEntity="NWWorkOrderLineItem" syncable="YES"/>
+    </entity>
+    <entity name="NWJobLineItemType" representedClassName="NWJobLineItemType" syncable="YES" codeGenerationType="class">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uri" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NWLineItemFile" representedClassName="NWLineItemFile" syncable="YES" codeGenerationType="class">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NWLocation" representedClassName="NWLocation" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NWProject" representedClassName="NWProject" syncable="YES" codeGenerationType="class">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="client" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWClient" syncable="YES"/>
+        <relationship name="workOrders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NWWorkOrder" inverseName="project" inverseEntity="NWWorkOrder" syncable="YES"/>
+    </entity>
+    <entity name="NWTapsAndPortsTest" representedClassName="NWTapsAndPortsTest" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lineItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWWorkOrderLineItem" inverseName="tests" inverseEntity="NWWorkOrderLineItem" syncable="YES"/>
+    </entity>
+    <entity name="NWWorkOrder" representedClassName="NWWorkOrder" syncable="YES" codeGenerationType="class">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="job" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWJob" inverseName="workOrder" inverseEntity="NWJob" syncable="YES"/>
+        <relationship name="lineItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NWWorkOrderLineItem" inverseName="workOrder" inverseEntity="NWWorkOrderLineItem" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWProject" inverseName="workOrders" inverseEntity="NWProject" syncable="YES"/>
+    </entity>
+    <entity name="NWWorkOrderLineItem" representedClassName="NWWorkOrderLineItem" syncable="YES" codeGenerationType="class">
+        <attribute name="downloadUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="quantityComplete" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="files" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWLineItemFile" syncable="YES"/>
+        <relationship name="jobLineItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWJobLineItem" inverseName="workOrderLineItem" inverseEntity="NWJobLineItem" syncable="YES"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NWTapsAndPortsTest" inverseName="lineItem" inverseEntity="NWTapsAndPortsTest" syncable="YES"/>
+        <relationship name="workOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWWorkOrder" inverseName="lineItems" inverseEntity="NWWorkOrder" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="NWProject" positionX="-308" positionY="-243" width="128" height="90"/>
+        <element name="NWClient" positionX="-8660" positionY="-4311" width="128" height="88"/>
+        <element name="NWJob" positionX="-8469" positionY="-3942" width="128" height="148"/>
+        <element name="NWJobLineItem" positionX="-8102" positionY="-4243" width="128" height="103"/>
+        <element name="NWJobLineItemType" positionX="-7922" positionY="-4293" width="128" height="105"/>
+        <element name="NWLocation" positionX="-8298" positionY="-3924" width="128" height="133"/>
+        <element name="NWProject" positionX="-8658" positionY="-4140" width="128" height="118"/>
+        <element name="NWWorkOrder" positionX="-8478" positionY="-4140" width="128" height="133"/>
+        <element name="NWWorkOrderLineItem" positionX="-8298" positionY="-4149" width="128" height="163"/>
+        <element name="NWTapsAndPortsTest" positionX="-8289" positionY="-4077" width="128" height="73"/>
+        <element name="NWLineItemFile" positionX="-8442" positionY="-4149" width="128" height="75"/>
     </elements>
 </model>

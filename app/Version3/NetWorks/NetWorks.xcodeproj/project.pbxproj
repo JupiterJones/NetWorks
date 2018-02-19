@@ -22,8 +22,16 @@
 		CE0207791FDDF641000E3BF4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0207771FDDF641000E3BF4 /* Alamofire.framework */; };
 		CE02077E1FDDF6FC000E3BF4 /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE02077B1FDDF6FC000E3BF4 /* KeychainSwift.framework */; };
 		CE02077F1FDDF6FC000E3BF4 /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE02077C1FDDF6FC000E3BF4 /* Sync.framework */; };
-		CE0207801FDDF6FC000E3BF4 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE02077D1FDDF6FC000E3BF4 /* Networking.framework */; };
 		CE0207821FDDF73A000E3BF4 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0207811FDDF73A000E3BF4 /* XCGLogger.framework */; };
+		CE2A403C202327BB007D9948 /* WorkOrderActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A403B202327BB007D9948 /* WorkOrderActionsViewController.swift */; };
+		CE2A403E202412BD007D9948 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A403D202412BD007D9948 /* LocationViewController.swift */; };
+		CE2A404020242000007D9948 /* WorkOrderLineItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A403F20242000007D9948 /* WorkOrderLineItemViewController.swift */; };
+		CE2A4042202426D7007D9948 /* PDFEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A4041202426D7007D9948 /* PDFEditorViewController.swift */; };
+		CE2A404420242896007D9948 /* ILPDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2A404320242896007D9948 /* ILPDFKit.framework */; };
+		CE2A404620243062007D9948 /* WorkOrderLineItemActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A404520243062007D9948 /* WorkOrderLineItemActionsViewController.swift */; };
+		CE3A1FE92022D07A000671EC /* WorkOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A1FE82022D07A000671EC /* WorkOrderViewController.swift */; };
+		CE69078820222D0600A0E51B /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69078720222D0600A0E51B /* FontAwesome.framework */; };
+		CE69078A2022B75B00A0E51B /* NWSyncBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6907892022B75B00A0E51B /* NWSyncBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +66,15 @@
 		CE02077C1FDDF6FC000E3BF4 /* Sync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sync.framework; path = Carthage/Build/iOS/Sync.framework; sourceTree = "<group>"; };
 		CE02077D1FDDF6FC000E3BF4 /* Networking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Networking.framework; path = Carthage/Build/iOS/Networking.framework; sourceTree = "<group>"; };
 		CE0207811FDDF73A000E3BF4 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		CE2A403B202327BB007D9948 /* WorkOrderActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderActionsViewController.swift; sourceTree = "<group>"; };
+		CE2A403D202412BD007D9948 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		CE2A403F20242000007D9948 /* WorkOrderLineItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderLineItemViewController.swift; sourceTree = "<group>"; };
+		CE2A4041202426D7007D9948 /* PDFEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFEditorViewController.swift; sourceTree = "<group>"; };
+		CE2A404320242896007D9948 /* ILPDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ILPDFKit.framework; path = Carthage/Build/iOS/ILPDFKit.framework; sourceTree = "<group>"; };
+		CE2A404520243062007D9948 /* WorkOrderLineItemActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderLineItemActionsViewController.swift; sourceTree = "<group>"; };
+		CE3A1FE82022D07A000671EC /* WorkOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderViewController.swift; sourceTree = "<group>"; };
+		CE69078720222D0600A0E51B /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
+		CE6907892022B75B00A0E51B /* NWSyncBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWSyncBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +86,9 @@
 				CE0207781FDDF641000E3BF4 /* AlamofireImage.framework in Frameworks */,
 				CE02077E1FDDF6FC000E3BF4 /* KeychainSwift.framework in Frameworks */,
 				CE02077F1FDDF6FC000E3BF4 /* Sync.framework in Frameworks */,
-				CE0207801FDDF6FC000E3BF4 /* Networking.framework in Frameworks */,
 				CE0207821FDDF73A000E3BF4 /* XCGLogger.framework in Frameworks */,
+				CE69078820222D0600A0E51B /* FontAwesome.framework in Frameworks */,
+				CE2A404420242896007D9948 /* ILPDFKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0207671FDDF09A000E3BF4 /* NWAPI.swift */,
+				CE6907892022B75B00A0E51B /* NWSyncBase.swift */,
 				CE0207681FDDF09A000E3BF4 /* NWProjectSync.swift */,
 			);
 			path = API;
@@ -158,6 +177,12 @@
 				CE02074C1FDDEEFB000E3BF4 /* LaunchScreen.storyboard */,
 				CE0207711FDDF4EB000E3BF4 /* ProjectsViewController.swift */,
 				CE0207721FDDF4EB000E3BF4 /* ProjectViewController.swift */,
+				CE3A1FE82022D07A000671EC /* WorkOrderViewController.swift */,
+				CE2A403B202327BB007D9948 /* WorkOrderActionsViewController.swift */,
+				CE2A403D202412BD007D9948 /* LocationViewController.swift */,
+				CE2A403F20242000007D9948 /* WorkOrderLineItemViewController.swift */,
+				CE2A404520243062007D9948 /* WorkOrderLineItemActionsViewController.swift */,
+				CE2A4041202426D7007D9948 /* PDFEditorViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -165,6 +190,8 @@
 		CE0207751FDDF641000E3BF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE2A404320242896007D9948 /* ILPDFKit.framework */,
+				CE69078720222D0600A0E51B /* FontAwesome.framework */,
 				CE0207811FDDF73A000E3BF4 /* XCGLogger.framework */,
 				CE02077B1FDDF6FC000E3BF4 /* KeychainSwift.framework */,
 				CE02077D1FDDF6FC000E3BF4 /* Networking.framework */,
@@ -286,8 +313,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Sync.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Networking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ILPDFKit.framework",
 			);
 			outputPaths = (
 			);
@@ -304,9 +332,16 @@
 			files = (
 				CE02076F1FDDF09A000E3BF4 /* NetWorksDataModel.xcdatamodeld in Sources */,
 				CE0207731FDDF4EB000E3BF4 /* ProjectsViewController.swift in Sources */,
+				CE69078A2022B75B00A0E51B /* NWSyncBase.swift in Sources */,
 				CE0207741FDDF4EB000E3BF4 /* ProjectViewController.swift in Sources */,
+				CE2A404020242000007D9948 /* WorkOrderLineItemViewController.swift in Sources */,
+				CE2A403C202327BB007D9948 /* WorkOrderActionsViewController.swift in Sources */,
+				CE2A403E202412BD007D9948 /* LocationViewController.swift in Sources */,
+				CE2A404620243062007D9948 /* WorkOrderLineItemActionsViewController.swift in Sources */,
 				CE02076E1FDDF09A000E3BF4 /* NWProjectSync.swift in Sources */,
+				CE2A4042202426D7007D9948 /* PDFEditorViewController.swift in Sources */,
 				CE02076D1FDDF09A000E3BF4 /* NWAPI.swift in Sources */,
+				CE3A1FE92022D07A000671EC /* WorkOrderViewController.swift in Sources */,
 				CE0207421FDDEEFB000E3BF4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

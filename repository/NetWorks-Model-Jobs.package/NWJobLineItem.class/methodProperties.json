@@ -8,7 +8,8 @@
 		"canBeDeleted" : "jupiter 04/07/2017 23:56",
 		"canNotBeDeletedErrorMessage" : "jupiter 01/28/2018 13:53",
 		"descriptionContainer" : "jupiter 04/08/2017 18:21",
-		"initialize" : "jupiter 04/03/2017 21:21",
+		"id" : "jupiter 01/31/2018 23:02",
+		"initialize" : "jupiter 01/31/2018 21:18",
 		"job" : "jupiter 04/03/2017 21:18",
 		"job:" : "jupiter 04/03/2017 21:18",
 		"lineItemType" : "jupiter 04/03/2017 21:18",
@@ -35,4 +36,5 @@
 		"quantityDescription" : "jupiter 04/05/2017 19:29",
 		"title" : "jupiter 04/05/2017 19:16",
 		"titleDescription" : "jupiter 04/05/2017 19:23",
+		"uuidString" : "jupiter 01/31/2018 21:20",
 		"workOrders" : "jupiter 04/03/2017 21:19" } }

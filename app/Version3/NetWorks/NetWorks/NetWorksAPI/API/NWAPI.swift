@@ -12,11 +12,14 @@ public class NWAPI {
 	
 	public static let shared = NWAPI()
 	
-	private static let developmentUrl = "http://dev.api.networks.tai.earth/2.0"
-	private static let productionUrl = "http://api.networks.tai.earth/2.0"
+	private static let developmentApiHost = "http://dev.api.networks.tai.earth/"
+	private static let productionApiHost = "http://api.networks.tai.earth/"
+	private static let apiVersion = "2.0"
 	
-	static let baseUrl = developmentUrl
-	//static let baseUrl = self.productionUrl
+	static let useHost = developmentApiHost
+	//static let useHost = productionApiHost
+	
+	static let baseUrl = useHost + apiVersion
 	
 	private init() { }
 	
