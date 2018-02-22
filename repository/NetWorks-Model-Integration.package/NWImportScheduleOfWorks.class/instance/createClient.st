@@ -7,6 +7,9 @@ createClient
     ifNone: [ 
       self
         configureClient:
-          (NWClient new
-            title: clientTitle;
-            yourself) ]
+          (self model clients
+            add:
+              (NWClient new
+                title: clientTitle;
+                organisation: self model organisation;
+                yourself)) ]
