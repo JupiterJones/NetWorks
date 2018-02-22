@@ -5,11 +5,17 @@ renderProjectsInfoBoxOn: canvas
     smallSize: 6;
     extraSmallSize: 12;
     with: [ 
-          canvas
-            render:
-              (AdminLTEInfoBoxWidget new
-                icon: #'briefcase';
-                label: 'Projects';
-                number: self model projects size;
-                widgetColor: 'aqua';
-                yourself) ]
+          canvas anchor
+            callback: [ 
+                  self rootAnnouncer
+                    announce:
+                      (AdminLTEPanelSelected panel: (self parent panelOfType: NWProjectsPanel)) ];
+            with: [ 
+                  canvas
+                    render:
+                      (AdminLTEInfoBoxWidget new
+                        icon: #'briefcase';
+                        label: 'Projects';
+                        number: self model projects size;
+                        widgetColor: 'aqua';
+                        yourself) ] ]

@@ -16,14 +16,22 @@ renderWorkOrdersInfoBoxOn: canvas
     smallSize: 6;
     extraSmallSize: 12;
     with: [ 
-          canvas
-            render:
-              (AdminLTEInfoBox2Widget new
-                icon: #'wrench';
-                label: 'Work Orders';
-                number: workOrders size;
-                widgetColor: 'aqua';
-                progressValue: workOrdersCompletePercent;
-                progressDescription:
-                    'Completed ' , workOrdersCompletedThisWeek size asString , ' this week';
-                yourself) ]
+          canvas anchor
+            callback: [ 
+                  self rootAnnouncer
+                    announce:
+                      (AdminLTEPanelSelected
+                        panel:
+                          (self parent panelOfType: NWContractorWorkOrdersPanel)) ];
+            with: [ 
+                  canvas
+                    render:
+                      (AdminLTEInfoBox2Widget new
+                        icon: #'wrench';
+                        label: 'Work Orders';
+                        number: workOrders size;
+                        widgetColor: 'aqua';
+                        progressValue: workOrdersCompletePercent;
+                        progressDescription:
+                            'Completed ' , workOrdersCompletedThisWeek size asString , ' this week';
+                        yourself) ] ]

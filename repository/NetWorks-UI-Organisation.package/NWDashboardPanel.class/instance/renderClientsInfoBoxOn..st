@@ -5,11 +5,17 @@ renderClientsInfoBoxOn: canvas
     smallSize: 6;
     extraSmallSize: 12;
     with: [ 
-          canvas
-            render:
-              (AdminLTEInfoBoxWidget new
-                icon: #'buildingOutlined';
-                label: 'Clients';
-                number: self model clients size;
-                widgetColor: 'aqua';
-                yourself) ]
+          canvas anchor
+            callback: [ 
+                  self rootAnnouncer
+                    announce:
+                      (AdminLTEPanelSelected panel: (self parent panelOfType: NWClientsPanel)) ];
+            with: [ 
+                  canvas
+                    render:
+                      (AdminLTEInfoBoxWidget new
+                        icon: #'buildingOutlined';
+                        label: 'Clients';
+                        number: self model clients size;
+                        widgetColor: 'aqua';
+                        yourself) ] ]
