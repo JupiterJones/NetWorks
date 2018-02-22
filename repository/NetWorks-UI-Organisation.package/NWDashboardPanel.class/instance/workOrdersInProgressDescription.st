@@ -8,7 +8,7 @@ workOrdersInProgressDescription
     classes: {NWWorkOrder};
     componentClass: NWMagritteOneToManyComponent;
     reference:
-        template locationTitleDescription , template clientTitleDescription
+        template titleDescription , template clientTitleDescription
             , template jobTypeTitleDescription
             , template contractorNameDescription;
     label: 'Work Orders in Progress';

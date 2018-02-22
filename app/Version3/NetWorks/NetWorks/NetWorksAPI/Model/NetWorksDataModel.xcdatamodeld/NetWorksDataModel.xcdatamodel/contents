@@ -62,7 +62,7 @@
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="quantityComplete" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="files" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWLineItemFile" syncable="YES"/>
+        <relationship name="files" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NWLineItemFile" syncable="YES"/>
         <relationship name="jobLineItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWJobLineItem" inverseName="workOrderLineItem" inverseEntity="NWJobLineItem" syncable="YES"/>
         <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NWTapsAndPortsTest" inverseName="lineItem" inverseEntity="NWTapsAndPortsTest" syncable="YES"/>
         <relationship name="workOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWWorkOrder" inverseName="lineItems" inverseEntity="NWWorkOrder" syncable="YES"/>
@@ -72,11 +72,11 @@
         <element name="NWJob" positionX="-8469" positionY="-3942" width="128" height="148"/>
         <element name="NWJobLineItem" positionX="-8102" positionY="-4243" width="128" height="103"/>
         <element name="NWJobLineItemType" positionX="-7922" positionY="-4293" width="128" height="105"/>
+        <element name="NWLineItemFile" positionX="-8442" positionY="-4149" width="128" height="75"/>
         <element name="NWLocation" positionX="-8298" positionY="-3924" width="128" height="133"/>
         <element name="NWProject" positionX="-8658" positionY="-4140" width="128" height="118"/>
-        <element name="NWWorkOrder" positionX="-8478" positionY="-4140" width="128" height="133"/>
-        <element name="NWWorkOrderLineItem" positionX="-8298" positionY="-4149" width="128" height="163"/>
         <element name="NWTapsAndPortsTest" positionX="-8289" positionY="-4077" width="128" height="73"/>
-        <element name="NWLineItemFile" positionX="-8442" positionY="-4149" width="128" height="75"/>
+        <element name="NWWorkOrder" positionX="-8478" positionY="-4140" width="128" height="133"/>
+        <element name="NWWorkOrderLineItem" positionX="-8298" positionY="-4149" width="128" height="165"/>
     </elements>
 </model>

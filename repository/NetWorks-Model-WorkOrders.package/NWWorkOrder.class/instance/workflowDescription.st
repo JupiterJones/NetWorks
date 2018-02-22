@@ -4,10 +4,7 @@ workflowDescription
   | description |
   description := MASingleOptionDescription new
     accessor: #'workflow';
-    options:
-        {(workflow previous).
-          workflow.
-          (workflow next)};
+    options: NWWorkflow all;
     reference: NWWorkflow new titleDescription asContainer;
     label: 'Workflow';
     priority: 400;

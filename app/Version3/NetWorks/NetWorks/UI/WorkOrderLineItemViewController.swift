@@ -61,6 +61,56 @@ class WorkOrderLineItemViewController: UITableViewController {
 			// The popover is visible.
 		}
 	}
+	
+	
+	
+	
+	
+	
+	// MARK: - Table view data source
+	
+	override func numberOfSections(in tableView: UITableView) -> Int {
+		// #warning Incomplete implementation, return the number of sections
+		//return 3
+		return 0
+	}
+	
+	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		switch section {
+		case 0:
+			// Work Order Line Item details
+			return 3
+		case 1:
+			// Tests
+			return (lineItem?.tests?.count)!
+		case 2:
+			// Images
+			return (lineItem?.files?.count)!
+		default:
+			XCGLogger.error("This should not happen")
+			return 0
+		}
+	}
+	
+	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		
+		switch section {
+		case 0:
+			return "Work Order Line Item"
+		case 1:
+			return "Tests"
+		case 2:
+			return "Images"
+		default:
+			XCGLogger.error("This should not happen")
+			return ""
+		}
+	}
+
+	
+	
+	
+	
 
     /*
     // MARK: - Navigation

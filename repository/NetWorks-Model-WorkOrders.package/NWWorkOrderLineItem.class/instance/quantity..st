@@ -1,4 +1,3 @@
 accessing
 quantity: anObject
-
-   quantity := anObject
+  quantity := anObject

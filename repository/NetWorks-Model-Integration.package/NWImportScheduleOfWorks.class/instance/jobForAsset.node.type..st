@@ -13,5 +13,5 @@ jobForAsset: asset node: node type: jobType
             project: project;
             jobType: jobType;
             asset: asset;
-            location: self model locations anyOny;
+            location: self model locations anyOne;
             yourself) ]
