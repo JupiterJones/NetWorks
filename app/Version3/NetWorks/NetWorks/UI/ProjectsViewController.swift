@@ -16,7 +16,6 @@ class ProjectsViewController: UITableViewController {
 
 	var projectViewController: ProjectViewController? = nil
 	var projects = [NWProject]()
-	let api = NWAPI.shared.projectsApi()
 		
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -32,17 +31,15 @@ class ProjectsViewController: UITableViewController {
 		    projectViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? ProjectViewController
 		}
 		
-		
-		self.projects = api.projects()
-		self.refresh(sender: self)
+		self.projects = api.projectsApi().projects()
 	}
 	
 	@objc
 	func refresh(sender: Any) {
-		api.sync() { result in
+		api.projectsApi().sync() { result in
 			switch result {
 			case .success:
-				self.projects = self.api.projects()
+				self.projects = api.projectsApi().projects()
 				self.tableView.reloadData()
 			case .failure(let error):
 				print(error)
@@ -50,10 +47,15 @@ class ProjectsViewController: UITableViewController {
 			self.refreshControl?.endRefreshing()
 		}
 	}
-
+	
 	override func viewWillAppear(_ animated: Bool) {
 		clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
 		super.viewWillAppear(animated)
+	}
+	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		refresh(sender: self)
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -78,6 +80,9 @@ class ProjectsViewController: UITableViewController {
 		        controller.project = object
 		        controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
 		        controller.navigationItem.leftItemsSupplementBackButton = true
+				
+				// API TESTING
+				api.projectsApi().pushProjectChanges(project: object)
 		    }
 		}
 	}

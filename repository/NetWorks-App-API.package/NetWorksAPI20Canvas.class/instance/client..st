@@ -5,4 +5,5 @@ client: client
       self
         key: 'id' value: client id asString;
         key: 'title' value: client title;
-        key: 'comment' value: client comment ]
+        key: 'comment' value: client comment;
+        key: 'uri' value: client uri ]

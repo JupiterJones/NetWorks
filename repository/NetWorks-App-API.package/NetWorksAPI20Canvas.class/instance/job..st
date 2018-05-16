@@ -6,7 +6,6 @@ job: job
         key: 'id' value: job id asString;
         key: 'title' value: job title;
         key: 'comment' value: job comment;
-        key: 'client' value: job project client title;
         key: 'location' value: [ self location: job location ];
         key: 'asset' value: job asset;
         key: 'uri' value: job uri ]

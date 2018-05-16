@@ -6,6 +6,7 @@ project: project contractor: contractor
         key: 'id' value: project id asString;
         key: 'title' value: project title;
         key: 'comment' value: project comment;
+        key: 'uri' value: project uri;
         key: 'client' value: [ self client: project client ];
         key: 'workOrders'
           value: [ 

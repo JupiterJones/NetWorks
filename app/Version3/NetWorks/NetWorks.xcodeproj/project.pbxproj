@@ -23,15 +23,45 @@
 		CE02077E1FDDF6FC000E3BF4 /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE02077B1FDDF6FC000E3BF4 /* KeychainSwift.framework */; };
 		CE02077F1FDDF6FC000E3BF4 /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE02077C1FDDF6FC000E3BF4 /* Sync.framework */; };
 		CE0207821FDDF73A000E3BF4 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0207811FDDF73A000E3BF4 /* XCGLogger.framework */; };
-		CE2A403C202327BB007D9948 /* WorkOrderActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A403B202327BB007D9948 /* WorkOrderActionsViewController.swift */; };
 		CE2A403E202412BD007D9948 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A403D202412BD007D9948 /* LocationViewController.swift */; };
-		CE2A404020242000007D9948 /* WorkOrderLineItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A403F20242000007D9948 /* WorkOrderLineItemViewController.swift */; };
 		CE2A4042202426D7007D9948 /* PDFEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A4041202426D7007D9948 /* PDFEditorViewController.swift */; };
 		CE2A404420242896007D9948 /* ILPDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2A404320242896007D9948 /* ILPDFKit.framework */; };
-		CE2A404620243062007D9948 /* WorkOrderLineItemActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A404520243062007D9948 /* WorkOrderLineItemActionsViewController.swift */; };
-		CE3A1FE92022D07A000671EC /* WorkOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A1FE82022D07A000671EC /* WorkOrderViewController.swift */; };
+		CE4E20BE204F97BA0036E97C /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4E20BD204F97BA0036E97C /* PKHUD.framework */; };
+		CE4E20C0204FB94E0036E97C /* NWJobTypeSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E20BF204FB94E0036E97C /* NWJobTypeSync.swift */; };
+		CE4E20C2204FFC6A0036E97C /* Hydra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4E20C1204FFC6A0036E97C /* Hydra.framework */; };
+		CE5EF67E207AE773003F1190 /* BaseJobLineItemTypesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF67B207AE772003F1190 /* BaseJobLineItemTypesController.swift */; };
+		CE5EF67F207AE773003F1190 /* JobLineItemTypesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF67C207AE772003F1190 /* JobLineItemTypesController.swift */; };
+		CE5EF680207AE773003F1190 /* JobLineItemTypeSearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF67D207AE772003F1190 /* JobLineItemTypeSearchResultsController.swift */; };
+		CE5EF682207AE8B3003F1190 /* JobLineItemTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5EF681207AE8B3003F1190 /* JobLineItemTypeCell.xib */; };
+		CE5EF68820841F43003F1190 /* WorkOrderActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF68420841F43003F1190 /* WorkOrderActionsViewController.swift */; };
+		CE5EF68920841F43003F1190 /* WorkOrderLineItemActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF68520841F43003F1190 /* WorkOrderLineItemActionsViewController.swift */; };
+		CE5EF68A20841F43003F1190 /* WorkOrderLineItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF68620841F43003F1190 /* WorkOrderLineItemViewController.swift */; };
+		CE5EF68B20841F43003F1190 /* WorkOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF68720841F43003F1190 /* WorkOrderViewController.swift */; };
+		CE5EF68E20841F4F003F1190 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF68D20841F4F003F1190 /* CameraViewController.swift */; };
+		CE5EF69120842C6E003F1190 /* NWLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF69020842C6E003F1190 /* NWLocationManager.swift */; };
+		CE5EF69420842D10003F1190 /* UIImage-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF69320842D10003F1190 /* UIImage-extension.swift */; };
+		CE5EF69620843562003F1190 /* AuthorisationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF69520843562003F1190 /* AuthorisationViewController.swift */; };
+		CE5EF698208496E6003F1190 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EF697208496E6003F1190 /* SwiftyJSON.framework */; };
 		CE69078820222D0600A0E51B /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69078720222D0600A0E51B /* FontAwesome.framework */; };
 		CE69078A2022B75B00A0E51B /* NWSyncBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6907892022B75B00A0E51B /* NWSyncBase.swift */; };
+		CE7CD6C820A1429300A4780D /* FilesProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7CD6C720A1429300A4780D /* FilesProvider.framework */; };
+		CE7CD6E420ABAF8E00A4780D /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CD6CE20ABAF8E00A4780D /* CommentViewController.swift */; };
+		CE7CD6E520ABAF8E00A4780D /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7CD6CF20ABAF8E00A4780D /* CommentViewController.xib */; };
+		CE7CD6E620ABAF8E00A4780D /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CD6D120ABAF8E00A4780D /* Foundation.swift */; };
+		CE7CD6E720ABAF8E00A4780D /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CD6D220ABAF8E00A4780D /* Transition.swift */; };
+		CE7CD6E820ABAF8E00A4780D /* FailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CD6D420ABAF8E00A4780D /* FailedViewController.swift */; };
+		CE7CD6E920ABAF8E00A4780D /* FailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7CD6D520ABAF8E00A4780D /* FailedViewController.xib */; };
+		CE7CD6EA20ABAF8E00A4780D /* FilesBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CD6D720ABAF8E00A4780D /* FilesBrowserController.swift */; };
+		CE7CD6EB20ABAF8E00A4780D /* FilesBrowserDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CD6D820ABAF8E00A4780D /* FilesBrowserDelegates.swift */; };
+		CE7CD6EC20ABAF8E00A4780D /* FilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CD6DA20ABAF8E00A4780D /* FilesTableViewController.swift */; };
+		CE7CD6ED20ABAF8E00A4780D /* FileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CD6DB20ABAF8E00A4780D /* FileTableViewCell.swift */; };
+		CE7CD6EE20ABAF8E00A4780D /* FileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7CD6DC20ABAF8E00A4780D /* FileTableViewCell.xib */; };
+		CE7CD6EF20ABAF8E00A4780D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CD6DE20ABAF8E00A4780D /* LoadingViewController.swift */; };
+		CE7CD6F020ABAF8E00A4780D /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7CD6DF20ABAF8E00A4780D /* LoadingViewController.xib */; };
+		CE7CD6F120ABAF8E00A4780D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7CD6E120ABAF8E00A4780D /* Assets.xcassets */; };
+		CE7CD6F220ABAF8E00A4780D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE7CD6E320ABAF8E00A4780D /* Info.plist */; };
+		CEA23DC1208BD2CA009F3F92 /* NWAuthorisationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA23DC0208BD2CA009F3F92 /* NWAuthorisationAPI.swift */; };
+		CEE249282048AE59001FB037 /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE249272048AE59001FB037 /* TextInputTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,17 +94,47 @@
 		CE0207771FDDF641000E3BF4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		CE02077B1FDDF6FC000E3BF4 /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
 		CE02077C1FDDF6FC000E3BF4 /* Sync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sync.framework; path = Carthage/Build/iOS/Sync.framework; sourceTree = "<group>"; };
-		CE02077D1FDDF6FC000E3BF4 /* Networking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Networking.framework; path = Carthage/Build/iOS/Networking.framework; sourceTree = "<group>"; };
 		CE0207811FDDF73A000E3BF4 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
-		CE2A403B202327BB007D9948 /* WorkOrderActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderActionsViewController.swift; sourceTree = "<group>"; };
 		CE2A403D202412BD007D9948 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
-		CE2A403F20242000007D9948 /* WorkOrderLineItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderLineItemViewController.swift; sourceTree = "<group>"; };
 		CE2A4041202426D7007D9948 /* PDFEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFEditorViewController.swift; sourceTree = "<group>"; };
 		CE2A404320242896007D9948 /* ILPDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ILPDFKit.framework; path = Carthage/Build/iOS/ILPDFKit.framework; sourceTree = "<group>"; };
-		CE2A404520243062007D9948 /* WorkOrderLineItemActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderLineItemActionsViewController.swift; sourceTree = "<group>"; };
-		CE3A1FE82022D07A000671EC /* WorkOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderViewController.swift; sourceTree = "<group>"; };
+		CE4E20BD204F97BA0036E97C /* PKHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PKHUD.framework; path = Carthage/Build/iOS/PKHUD.framework; sourceTree = "<group>"; };
+		CE4E20BF204FB94E0036E97C /* NWJobTypeSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWJobTypeSync.swift; sourceTree = "<group>"; };
+		CE4E20C1204FFC6A0036E97C /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/iOS/Hydra.framework; sourceTree = "<group>"; };
+		CE5EF67B207AE772003F1190 /* BaseJobLineItemTypesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseJobLineItemTypesController.swift; sourceTree = "<group>"; };
+		CE5EF67C207AE772003F1190 /* JobLineItemTypesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobLineItemTypesController.swift; sourceTree = "<group>"; };
+		CE5EF67D207AE772003F1190 /* JobLineItemTypeSearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobLineItemTypeSearchResultsController.swift; sourceTree = "<group>"; };
+		CE5EF681207AE8B3003F1190 /* JobLineItemTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobLineItemTypeCell.xib; sourceTree = "<group>"; };
+		CE5EF68420841F43003F1190 /* WorkOrderActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOrderActionsViewController.swift; sourceTree = "<group>"; };
+		CE5EF68520841F43003F1190 /* WorkOrderLineItemActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOrderLineItemActionsViewController.swift; sourceTree = "<group>"; };
+		CE5EF68620841F43003F1190 /* WorkOrderLineItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOrderLineItemViewController.swift; sourceTree = "<group>"; };
+		CE5EF68720841F43003F1190 /* WorkOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOrderViewController.swift; sourceTree = "<group>"; };
+		CE5EF68D20841F4F003F1190 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		CE5EF69020842C6E003F1190 /* NWLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWLocationManager.swift; sourceTree = "<group>"; };
+		CE5EF69320842D10003F1190 /* UIImage-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-extension.swift"; sourceTree = "<group>"; };
+		CE5EF69520843562003F1190 /* AuthorisationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorisationViewController.swift; sourceTree = "<group>"; };
+		CE5EF697208496E6003F1190 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		CE69078720222D0600A0E51B /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
 		CE6907892022B75B00A0E51B /* NWSyncBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWSyncBase.swift; sourceTree = "<group>"; };
+		CE7CD6C720A1429300A4780D /* FilesProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FilesProvider.framework; path = Carthage/Build/iOS/FilesProvider.framework; sourceTree = "<group>"; };
+		CE7CD6CE20ABAF8E00A4780D /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		CE7CD6CF20ABAF8E00A4780D /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
+		CE7CD6D120ABAF8E00A4780D /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		CE7CD6D220ABAF8E00A4780D /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		CE7CD6D420ABAF8E00A4780D /* FailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailedViewController.swift; sourceTree = "<group>"; };
+		CE7CD6D520ABAF8E00A4780D /* FailedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FailedViewController.xib; sourceTree = "<group>"; };
+		CE7CD6D720ABAF8E00A4780D /* FilesBrowserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesBrowserController.swift; sourceTree = "<group>"; };
+		CE7CD6D820ABAF8E00A4780D /* FilesBrowserDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesBrowserDelegates.swift; sourceTree = "<group>"; };
+		CE7CD6DA20ABAF8E00A4780D /* FilesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesTableViewController.swift; sourceTree = "<group>"; };
+		CE7CD6DB20ABAF8E00A4780D /* FileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTableViewCell.swift; sourceTree = "<group>"; };
+		CE7CD6DC20ABAF8E00A4780D /* FileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileTableViewCell.xib; sourceTree = "<group>"; };
+		CE7CD6DE20ABAF8E00A4780D /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		CE7CD6DF20ABAF8E00A4780D /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		CE7CD6E120ABAF8E00A4780D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE7CD6E220ABAF8E00A4780D /* FilesBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesBrowser.h; sourceTree = "<group>"; };
+		CE7CD6E320ABAF8E00A4780D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA23DC0208BD2CA009F3F92 /* NWAuthorisationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWAuthorisationAPI.swift; sourceTree = "<group>"; };
+		CEE249272048AE59001FB037 /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +149,10 @@
 				CE0207821FDDF73A000E3BF4 /* XCGLogger.framework in Frameworks */,
 				CE69078820222D0600A0E51B /* FontAwesome.framework in Frameworks */,
 				CE2A404420242896007D9948 /* ILPDFKit.framework in Frameworks */,
+				CE4E20BE204F97BA0036E97C /* PKHUD.framework in Frameworks */,
+				CE4E20C2204FFC6A0036E97C /* Hydra.framework in Frameworks */,
+				CE5EF698208496E6003F1190 /* SwiftyJSON.framework in Frameworks */,
+				CE7CD6C820A1429300A4780D /* FilesProvider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +191,8 @@
 				CE0207631FDDEFEB000E3BF4 /* Cartfile */,
 				CE02074F1FDDEEFB000E3BF4 /* Info.plist */,
 				CE0207411FDDEEFB000E3BF4 /* AppDelegate.swift */,
+				CE5EF69220842D10003F1190 /* Extensions */,
+				CE5EF68F20842C6E003F1190 /* Location Manager */,
 				CE0207701FDDF4EB000E3BF4 /* UI */,
 				CE0207651FDDF09A000E3BF4 /* NetWorksAPI */,
 				CE02074A1FDDEEFB000E3BF4 /* Assets.xcassets */,
@@ -158,6 +224,8 @@
 				CE0207671FDDF09A000E3BF4 /* NWAPI.swift */,
 				CE6907892022B75B00A0E51B /* NWSyncBase.swift */,
 				CE0207681FDDF09A000E3BF4 /* NWProjectSync.swift */,
+				CE4E20BF204FB94E0036E97C /* NWJobTypeSync.swift */,
+				CEA23DC0208BD2CA009F3F92 /* NWAuthorisationAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -175,14 +243,16 @@
 			children = (
 				CE0207471FDDEEFB000E3BF4 /* Main.storyboard */,
 				CE02074C1FDDEEFB000E3BF4 /* LaunchScreen.storyboard */,
+				CE5EF69520843562003F1190 /* AuthorisationViewController.swift */,
 				CE0207711FDDF4EB000E3BF4 /* ProjectsViewController.swift */,
 				CE0207721FDDF4EB000E3BF4 /* ProjectViewController.swift */,
-				CE3A1FE82022D07A000671EC /* WorkOrderViewController.swift */,
-				CE2A403B202327BB007D9948 /* WorkOrderActionsViewController.swift */,
 				CE2A403D202412BD007D9948 /* LocationViewController.swift */,
-				CE2A403F20242000007D9948 /* WorkOrderLineItemViewController.swift */,
-				CE2A404520243062007D9948 /* WorkOrderLineItemActionsViewController.swift */,
 				CE2A4041202426D7007D9948 /* PDFEditorViewController.swift */,
+				CEE249272048AE59001FB037 /* TextInputTableViewCell.swift */,
+				CE7CD6CC20ABAF8E00A4780D /* FilesBrowser */,
+				CE5EF68320841F43003F1190 /* WorkOrders */,
+				CE5EF67A207AE772003F1190 /* JobLineItemTypes */,
+				CE5EF68C20841F4F003F1190 /* Camera */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -190,16 +260,147 @@
 		CE0207751FDDF641000E3BF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE7CD6C720A1429300A4780D /* FilesProvider.framework */,
+				CE5EF697208496E6003F1190 /* SwiftyJSON.framework */,
+				CE4E20C1204FFC6A0036E97C /* Hydra.framework */,
+				CE4E20BD204F97BA0036E97C /* PKHUD.framework */,
 				CE2A404320242896007D9948 /* ILPDFKit.framework */,
 				CE69078720222D0600A0E51B /* FontAwesome.framework */,
 				CE0207811FDDF73A000E3BF4 /* XCGLogger.framework */,
 				CE02077B1FDDF6FC000E3BF4 /* KeychainSwift.framework */,
-				CE02077D1FDDF6FC000E3BF4 /* Networking.framework */,
 				CE02077C1FDDF6FC000E3BF4 /* Sync.framework */,
 				CE0207771FDDF641000E3BF4 /* Alamofire.framework */,
 				CE0207761FDDF641000E3BF4 /* AlamofireImage.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE5EF67A207AE772003F1190 /* JobLineItemTypes */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EF681207AE8B3003F1190 /* JobLineItemTypeCell.xib */,
+				CE5EF67B207AE772003F1190 /* BaseJobLineItemTypesController.swift */,
+				CE5EF67C207AE772003F1190 /* JobLineItemTypesController.swift */,
+				CE5EF67D207AE772003F1190 /* JobLineItemTypeSearchResultsController.swift */,
+			);
+			path = JobLineItemTypes;
+			sourceTree = "<group>";
+		};
+		CE5EF68320841F43003F1190 /* WorkOrders */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EF68420841F43003F1190 /* WorkOrderActionsViewController.swift */,
+				CE5EF68520841F43003F1190 /* WorkOrderLineItemActionsViewController.swift */,
+				CE5EF68620841F43003F1190 /* WorkOrderLineItemViewController.swift */,
+				CE5EF68720841F43003F1190 /* WorkOrderViewController.swift */,
+			);
+			path = WorkOrders;
+			sourceTree = "<group>";
+		};
+		CE5EF68C20841F4F003F1190 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EF68D20841F4F003F1190 /* CameraViewController.swift */,
+			);
+			name = Camera;
+			path = NetWorks/UI/Camera;
+			sourceTree = SOURCE_ROOT;
+		};
+		CE5EF68F20842C6E003F1190 /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EF69020842C6E003F1190 /* NWLocationManager.swift */,
+			);
+			name = "Location Manager";
+			path = "NetWorks/Location Manager";
+			sourceTree = SOURCE_ROOT;
+		};
+		CE5EF69220842D10003F1190 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EF69320842D10003F1190 /* UIImage-extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE7CD6CC20ABAF8E00A4780D /* FilesBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CD6CD20ABAF8E00A4780D /* Comment */,
+				CE7CD6D020ABAF8E00A4780D /* Extension */,
+				CE7CD6D320ABAF8E00A4780D /* Failed */,
+				CE7CD6D620ABAF8E00A4780D /* FilesFlow */,
+				CE7CD6D920ABAF8E00A4780D /* FilesTable */,
+				CE7CD6DD20ABAF8E00A4780D /* Loading */,
+				CE7CD6E020ABAF8E00A4780D /* Supporting */,
+			);
+			name = FilesBrowser;
+			path = NetWorks/FilesBrowser;
+			sourceTree = SOURCE_ROOT;
+		};
+		CE7CD6CD20ABAF8E00A4780D /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CD6CE20ABAF8E00A4780D /* CommentViewController.swift */,
+				CE7CD6CF20ABAF8E00A4780D /* CommentViewController.xib */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		CE7CD6D020ABAF8E00A4780D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CD6D120ABAF8E00A4780D /* Foundation.swift */,
+				CE7CD6D220ABAF8E00A4780D /* Transition.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE7CD6D320ABAF8E00A4780D /* Failed */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CD6D420ABAF8E00A4780D /* FailedViewController.swift */,
+				CE7CD6D520ABAF8E00A4780D /* FailedViewController.xib */,
+			);
+			path = Failed;
+			sourceTree = "<group>";
+		};
+		CE7CD6D620ABAF8E00A4780D /* FilesFlow */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CD6D720ABAF8E00A4780D /* FilesBrowserController.swift */,
+				CE7CD6D820ABAF8E00A4780D /* FilesBrowserDelegates.swift */,
+			);
+			path = FilesFlow;
+			sourceTree = "<group>";
+		};
+		CE7CD6D920ABAF8E00A4780D /* FilesTable */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CD6DA20ABAF8E00A4780D /* FilesTableViewController.swift */,
+				CE7CD6DB20ABAF8E00A4780D /* FileTableViewCell.swift */,
+				CE7CD6DC20ABAF8E00A4780D /* FileTableViewCell.xib */,
+			);
+			path = FilesTable;
+			sourceTree = "<group>";
+		};
+		CE7CD6DD20ABAF8E00A4780D /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CD6DE20ABAF8E00A4780D /* LoadingViewController.swift */,
+				CE7CD6DF20ABAF8E00A4780D /* LoadingViewController.xib */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		CE7CD6E020ABAF8E00A4780D /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CD6E120ABAF8E00A4780D /* Assets.xcassets */,
+				CE7CD6E220ABAF8E00A4780D /* FilesBrowser.h */,
+				CE7CD6E320ABAF8E00A4780D /* Info.plist */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,9 +487,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7CD6F020ABAF8E00A4780D /* LoadingViewController.xib in Resources */,
+				CE7CD6E520ABAF8E00A4780D /* CommentViewController.xib in Resources */,
+				CE7CD6EE20ABAF8E00A4780D /* FileTableViewCell.xib in Resources */,
 				CE02074E1FDDEEFB000E3BF4 /* LaunchScreen.storyboard in Resources */,
+				CE7CD6F120ABAF8E00A4780D /* Assets.xcassets in Resources */,
 				CE02074B1FDDEEFB000E3BF4 /* Assets.xcassets in Resources */,
 				CE0207641FDDEFEB000E3BF4 /* Cartfile in Resources */,
+				CE5EF682207AE8B3003F1190 /* JobLineItemTypeCell.xib in Resources */,
+				CE7CD6F220ABAF8E00A4780D /* Info.plist in Resources */,
+				CE7CD6E920ABAF8E00A4780D /* FailedViewController.xib in Resources */,
 				CE0207491FDDEEFB000E3BF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +524,10 @@
 				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ILPDFKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PKHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Hydra.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FilesProvider.framework",
 			);
 			outputPaths = (
 			);
@@ -331,17 +543,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE02076F1FDDF09A000E3BF4 /* NetWorksDataModel.xcdatamodeld in Sources */,
+				CE7CD6E820ABAF8E00A4780D /* FailedViewController.swift in Sources */,
+				CE7CD6EA20ABAF8E00A4780D /* FilesBrowserController.swift in Sources */,
+				CE5EF68820841F43003F1190 /* WorkOrderActionsViewController.swift in Sources */,
+				CE5EF68B20841F43003F1190 /* WorkOrderViewController.swift in Sources */,
+				CE5EF69620843562003F1190 /* AuthorisationViewController.swift in Sources */,
 				CE0207731FDDF4EB000E3BF4 /* ProjectsViewController.swift in Sources */,
 				CE69078A2022B75B00A0E51B /* NWSyncBase.swift in Sources */,
+				CE7CD6E720ABAF8E00A4780D /* Transition.swift in Sources */,
+				CE7CD6EB20ABAF8E00A4780D /* FilesBrowserDelegates.swift in Sources */,
+				CEE249282048AE59001FB037 /* TextInputTableViewCell.swift in Sources */,
 				CE0207741FDDF4EB000E3BF4 /* ProjectViewController.swift in Sources */,
-				CE2A404020242000007D9948 /* WorkOrderLineItemViewController.swift in Sources */,
-				CE2A403C202327BB007D9948 /* WorkOrderActionsViewController.swift in Sources */,
+				CE7CD6E420ABAF8E00A4780D /* CommentViewController.swift in Sources */,
+				CE5EF680207AE773003F1190 /* JobLineItemTypeSearchResultsController.swift in Sources */,
+				CE5EF67E207AE773003F1190 /* BaseJobLineItemTypesController.swift in Sources */,
 				CE2A403E202412BD007D9948 /* LocationViewController.swift in Sources */,
-				CE2A404620243062007D9948 /* WorkOrderLineItemActionsViewController.swift in Sources */,
 				CE02076E1FDDF09A000E3BF4 /* NWProjectSync.swift in Sources */,
 				CE2A4042202426D7007D9948 /* PDFEditorViewController.swift in Sources */,
 				CE02076D1FDDF09A000E3BF4 /* NWAPI.swift in Sources */,
-				CE3A1FE92022D07A000671EC /* WorkOrderViewController.swift in Sources */,
+				CE7CD6EF20ABAF8E00A4780D /* LoadingViewController.swift in Sources */,
+				CEA23DC1208BD2CA009F3F92 /* NWAuthorisationAPI.swift in Sources */,
+				CE7CD6ED20ABAF8E00A4780D /* FileTableViewCell.swift in Sources */,
+				CE4E20C0204FB94E0036E97C /* NWJobTypeSync.swift in Sources */,
+				CE5EF68A20841F43003F1190 /* WorkOrderLineItemViewController.swift in Sources */,
+				CE7CD6E620ABAF8E00A4780D /* Foundation.swift in Sources */,
+				CE5EF69120842C6E003F1190 /* NWLocationManager.swift in Sources */,
+				CE5EF69420842D10003F1190 /* UIImage-extension.swift in Sources */,
+				CE5EF68920841F43003F1190 /* WorkOrderLineItemActionsViewController.swift in Sources */,
+				CE5EF68E20841F4F003F1190 /* CameraViewController.swift in Sources */,
+				CE7CD6EC20ABAF8E00A4780D /* FilesTableViewController.swift in Sources */,
+				CE5EF67F207AE773003F1190 /* JobLineItemTypesController.swift in Sources */,
 				CE0207421FDDEEFB000E3BF4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

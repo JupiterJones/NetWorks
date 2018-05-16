@@ -16,25 +16,33 @@ createJobs
         ifFalse: [ 
           (row includesKey: #'asset')
             ifTrue: [ 
-              jobType
-                ifNil: [ self errors add: 'Can not add line item for asset ' , (row at: #'asset') ]
-                ifNotNil: [ 
-                  "Look up or create job"
-                  job := self
-                    jobForAsset: (row at: #'asset')
-                    node: (row at: #'node')
-                    type: jobType.	"Add line item"
-                  job lineItems
+              "Ensure there is a line item type"
+              lineItemType
+                ifNil: [ 
+                  self errors
                     add:
-                      (lineItem := self
-                        lineItemWithType: lineItemType
-                        title: (row at: #'asset')
+                      'No line item type found for ' , (row at: #'asset') , ' for client '
+                        , client title ]
+                ifNotNil: [ 
+                  jobType
+                    ifNil: [ self errors add: 'Can not add line item for asset ' , (row at: #'asset') ]
+                    ifNotNil: [ 
+                      "Look up or create job"
+                      job := self
+                        jobForAsset: (row at: #'asset')
+                        node: (row at: #'node')
+                        type: jobType.	"Add line item"
+                      job lineItems
+                        add:
+                          (lineItem := self
+                            lineItemWithType: lineItemType
+                            title: (row at: #'asset')
+                            job: job
+                            quantity: (row at: #'designQty')) ].
+                  (row includesKey: #'contractor')
+                    ifTrue: [ 
+                      self
+                        createWorkOrdersForContractors:
+                          (self contractorsNamed: (row at: #'contractor'))
                         job: job
-                        quantity: (row at: #'designQty')) ].
-              (row includesKey: #'contractor')
-                ifTrue: [ 
-                  self
-                    createWorkOrdersForContractors:
-                      (self contractorsNamed: (row at: #'contractor'))
-                    job: job
-                    lineItem: lineItem ] ] ] ]
+                        lineItem: lineItem ] ] ] ] ]

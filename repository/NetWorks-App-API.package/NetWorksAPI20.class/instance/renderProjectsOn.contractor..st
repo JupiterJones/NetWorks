@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderProjectsOn: canvas contractor: contractor
   "Render the jobLineItemTypes"
 

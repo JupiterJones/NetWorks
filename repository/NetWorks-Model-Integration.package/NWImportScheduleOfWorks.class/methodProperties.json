@@ -9,7 +9,7 @@
 		"contractorNamed:" : "jupiter 04/06/2017 00:07",
 		"contractorsNamed:" : "jupiter 04/06/2017 00:07",
 		"createClient" : "jupiter 02/21/2018 21:17",
-		"createJobs" : "jupiter 04/06/2017 00:08",
+		"createJobs" : "jupiter 02/27/2018 14:26",
 		"createModel" : "jupiter 04/06/2017 00:08",
 		"createProject" : "jupiter 04/08/2017 03:07",
 		"createWorkOrdersForContractors:job:lineItem:" : "jupiter 12/18/2017 18:39",
@@ -17,7 +17,8 @@
 		"jobForAsset:node:type:" : "jupiter 02/21/2018 20:19",
 		"jobForAssetOLD:node:type:" : "jupiter 12/18/2017 15:21",
 		"jobTypeFromLineItemTitle:" : "jupiter 02/21/2018 22:01",
-		"lineItemTypeWithTitle:" : "jupiter 04/06/2017 00:11",
+		"lineItemTypeWithTitle:" : "jupiter 02/27/2018 14:20",
+		"lineItemTypeWithTitleOrig:" : "jupiter 02/27/2018 13:59",
 		"lineItemWithType:title:job:quantity:" : "jupiter 04/06/2017 00:11",
 		"locationForLocation:node:" : "jupiter 06/23/2017 16:18",
 		"locationWithTitle:" : "jupiter 06/23/2017 16:19" } }

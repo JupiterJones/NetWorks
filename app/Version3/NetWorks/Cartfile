@@ -4,7 +4,7 @@ github "Alamofire/AlamofireImage" >= 3.2
 github "Alamofire/AlamofireNetworkActivityIndicator" >= 2.2
 
 # Keychain
-github "marketplacer/keychain-swift" ~> 10.0
+github "marketplacer/keychain-swift" ~> 11.0
 
 # Logging
 github "DaveWoodCom/XCGLogger" ~> 4.0.0
@@ -17,3 +17,16 @@ github "thii/FontAwesome.swift" >= 1.3
 
 # PDF Kit
 github "derekblair/ILPDFKit"
+
+# HUD
+github "pkluz/PKHUD" ~> 5.0
+
+# Hydra (async)
+github "malcommac/Hydra"
+
+# SwiftyJSON
+github "SwiftyJSON/SwiftyJSON" ~> 4.0
+
+# FilesProvider - for WebDav
+github "amosavian/FileProvider"
+

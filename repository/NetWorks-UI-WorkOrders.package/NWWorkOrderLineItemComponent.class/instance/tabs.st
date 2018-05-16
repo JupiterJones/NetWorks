@@ -3,16 +3,6 @@ tabs
   ^ OrderedCollection new
     add:
         (Dictionary new
-            at: #'id' put: #'files';
-            at: #'label' put: 'Files';
-            at: #'icon' put: #'filesOutlined';
-            at: #'callback'
-              put: [ 
-                  announcer announce: (NWTabSelected tab: #'files').
-                  components removeKey: #'finder' ifAbsent: [  ] ];
-            yourself);
-    add:
-        (Dictionary new
             at: #'id' put: #'lineItems';
             at: #'label' put: 'Line Items';
             at: #'icon' put: #'user';
@@ -27,4 +17,13 @@ tabs
             at: #'callback'
               put: [ announcer announce: (NWTabSelected tab: #'basics') ];
             yourself);
-    yourself
+    yourself	"add:
+        (Dictionary new
+            at: #'id' put: #'files';
+            at: #'label' put: 'Files';
+            at: #'icon' put: #'filesOutlined';
+            at: #'callback'
+              put: [ 
+                  announcer announce: (NWTabSelected tab: #'files').
+                  components removeKey: #'finder' ifAbsent: [  ] ];
+            yourself);"
