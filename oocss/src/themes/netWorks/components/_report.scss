@@ -31,8 +31,10 @@
     
 }
 
+
 // Report Search
-.reportSearch {
+.row .col-sm-6:last-child .reportSearch,
+.row .col-sm-6:last-child button {
 	float: right;
 }
 

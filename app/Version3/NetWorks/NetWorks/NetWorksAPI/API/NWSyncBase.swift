@@ -59,7 +59,7 @@ public class NWSyncBase {
 		log.verbose("Object has changed: \(notification)")
 	}
 	
-	func apiKey() -> String {
+	func apiKey() -> String? {
 		return NWAPI.shared.authorisation().apiKey()
 	}
 	

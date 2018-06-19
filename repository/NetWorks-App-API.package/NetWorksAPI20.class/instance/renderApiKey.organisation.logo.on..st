@@ -4,7 +4,6 @@ renderApiKey: apiKey organisation: organisation logo: logo on: canvas
 
   canvas
     object: [ 
-      canvas name: 'NetWorks API'.
       apiKey
         ifNotNil: [ 
           canvas

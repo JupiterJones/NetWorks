@@ -34,13 +34,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 		let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
 		navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
 		splitViewController.delegate = self
-		
+		perform(#selector(presentAuthorisation), with: nil, afterDelay: 0)
+		return true
+	}
+	
+	@objc func presentAuthorisation() {
 		if api.authorisation().apiKey() == nil  {
 			// Setup user
-			navigationController.visibleViewController?.performSegue(withIdentifier: "authorisationSegue", sender: self)
+			log.verbose("Navigating to AuthorisationController")
+			let authorisation = window!.rootViewController?.storyboard?.instantiateViewController(withIdentifier: "authorisationModal") as! AuthorisationViewController
+			authorisation.modalPresentationStyle = UIModalPresentationStyle.formSheet
+			window!.rootViewController?.present(authorisation, animated: true)
+			
 		}
-		
-		return true
 	}
 
 	func applicationWillResignActive(_ application: UIApplication) {

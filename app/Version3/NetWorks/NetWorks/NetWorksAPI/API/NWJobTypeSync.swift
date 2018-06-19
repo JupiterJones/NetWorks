@@ -39,8 +39,10 @@ public class NWJobTypeSync : NWSyncBase {
 	
 	func syncUsingAlamofire(completion: @escaping (_ result: VoidResult) -> ()) {
 		var headers: HTTPHeaders = [:]
-		if let authorizationHeader = Request.authorizationHeader(user: "apiKey", password: apiKey()) {
-			headers[authorizationHeader.key] = authorizationHeader.value
+		if let userApiKey = apiKey() {
+			if let authorizationHeader = Request.authorizationHeader(user: "apiKey", password: userApiKey) {
+				headers[authorizationHeader.key] = authorizationHeader.value
+			}
 		}
 		Alamofire.request(NWAPI.baseUrl + "/jobTypes", headers: headers)
 			.responseJSON { response in

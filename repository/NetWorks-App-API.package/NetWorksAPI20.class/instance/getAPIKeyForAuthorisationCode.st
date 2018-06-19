@@ -3,7 +3,7 @@ getAPIKeyForAuthorisationCode
   "Answer the api-key for this authorisation"
 
   <get>
-  <path: '/veryifyAuthorisationCode'>
+  <path: '/verifyAuthorisationCode'>
   <produces: 'application/json'>
   | authorisation authCode apiKey organisation |
   GRPlatform current
@@ -18,9 +18,12 @@ getAPIKeyForAuthorisationCode
   authCode := WACurrentRequestContext value request authorization readStream
     upTo: $:;
     upToEnd.
-  apiKey := NWModelRoot instance apiKeyForAuthCode: authCode.
+  (apiKey := NWModelRoot instance apiKeyForAuthCode: authCode)
+    ifNil: [ 
+      self requestContext response notFound.
+      ^ self successResponse ].
   organisation := (self modelRoot apiKeys at: apiKey) user organisation.
-  ^ NetWorksAPICanvas builder
+  ^ NetWorksAPI20Canvas builder
     render: [ :canvas | 
       self
         renderApiKey: apiKey

@@ -30,9 +30,12 @@ public class NWProjectSync : NWSyncBase {
 		PKHUD.sharedHUD.show()
 		
 		var headers: HTTPHeaders = [:]
-		if let authorizationHeader = Request.authorizationHeader(user: "apiKey", password: apiKey()) {
-			headers[authorizationHeader.key] = authorizationHeader.value
+		if let userApiKey = apiKey() {
+			if let authorizationHeader = Request.authorizationHeader(user: "apiKey", password: userApiKey) {
+				headers[authorizationHeader.key] = authorizationHeader.value
+			}
 		}
+
 		Alamofire.request(NWAPI.baseUrl + "/projects", headers: headers)
 			.responseJSON { response in
 				debugPrint(response)
@@ -59,8 +62,10 @@ public class NWProjectSync : NWSyncBase {
 		request.httpMethod = HTTPMethod.post.rawValue
 		request.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
 		
-		if let authorizationHeader = Request.authorizationHeader(user: "apiKey", password: apiKey()) {
-			request.setValue(authorizationHeader.value, forHTTPHeaderField: authorizationHeader.key)
+		if let userApiKey = apiKey() {
+			if let authorizationHeader = Request.authorizationHeader(user: "apiKey", password: userApiKey) {
+				request.setValue(authorizationHeader.value, forHTTPHeaderField: authorizationHeader.key)
+			}
 		}
 		let dateFormatter = DateFormatter()
 		dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"

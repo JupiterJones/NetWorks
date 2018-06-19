@@ -31,7 +31,6 @@ class AuthorisationViewController: UIViewController {
 	@IBAction func authorisationCodeChanged(_ sender: Any) {
 		let text = authorisationCodeField.text!
 		if (text.utf8.count == 4) {
-			log.verbose("apiKey requested for code : \(text))")
 			activityIndicator.startAnimating()
 			getApiKey(authorisationCode: text)
 		} else {
@@ -40,7 +39,19 @@ class AuthorisationViewController: UIViewController {
 	}
 	
 	func getApiKey(authorisationCode: String) {
-		
+		api.authorisation().fetchApiKeyForAuthorisationCode(authCode: authorisationCode) { result in
+			switch result {
+			case .success:
+				log.verbose("got api key")
+				self.navigationController?.popViewController(animated: true)
+				log.verbose("Popped View Controller")
+			case .failure(let error):
+				log.verbose("no api key found")
+				self.activityIndicator.stopAnimating()
+				self.showNoApiKeyMessage()
+				print(error)
+			}
+		}
 	}
 	
 	func showNoApiKeyMessage() {

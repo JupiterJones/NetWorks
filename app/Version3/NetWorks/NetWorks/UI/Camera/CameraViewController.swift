@@ -292,7 +292,8 @@ class CameraViewController: UIViewController, UIScrollViewDelegate, UIImagePicke
 	
 	func saveImageAndThumbnail(image: UIImage) {
 		
-		let path = workOrderLineItem?.workOrder?
+		/*
+		let path = workOrderLineItem?.workOrder?.uri
 
 		let thumbnailRect = CGSize(width: 128, height: 128)
 		let thumbnailImage = image.scaleImageToFill(newSize: thumbnailRect)
@@ -320,6 +321,7 @@ class CameraViewController: UIViewController, UIScrollViewDelegate, UIImagePicke
 		} catch {
 			log.error("Failed to save image and/or thumbnail")
 		}
+		*/
 	}
 	
 	
@@ -343,7 +345,7 @@ class CameraViewController: UIViewController, UIScrollViewDelegate, UIImagePicke
 	
 	
 	func uploadImageDirectly() {
-		
+		/*
 		// If no image has been taken
 		guard let checkImage = self.imageView.image else {
 			return
@@ -404,6 +406,7 @@ class CameraViewController: UIViewController, UIScrollViewDelegate, UIImagePicke
 				}
 			}
 		)
+*/
 	}
 	
 	

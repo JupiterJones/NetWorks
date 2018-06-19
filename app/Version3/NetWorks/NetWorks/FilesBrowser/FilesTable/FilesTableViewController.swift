@@ -37,7 +37,7 @@ class FilesTableViewController: UITableViewController, UITableViewDataSourcePref
             return selectedIndices.map({ files[$0] })
         }
         set {
-            let selected = newValue.flatMap({ files.index(of: $0) })
+			let selected = newValue.compactMap({ files.index(of: $0) })
             self.selectedIndices = selected
         }
     }
