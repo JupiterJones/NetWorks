@@ -49,7 +49,7 @@ public class NWJobTypeSync : NWSyncBase {
 				debugPrint(response)
 				if let jsonObject = response.result.value, let jobTypesJSON = jsonObject as? [[String: Any]] {
 					XCGLogger.debug("Syncing Job Types")
-					self.dataStack.sync(jobTypesJSON, inEntityNamed: NWJobType.entity().name!) { error in
+					self.dataStack.sync(jobTypesJSON, inEntityNamed: "NWJobType") { error in
 						completion(.success)
 					}
 				} else if let error = response.error {

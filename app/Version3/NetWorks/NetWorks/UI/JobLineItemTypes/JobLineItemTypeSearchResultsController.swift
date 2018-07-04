@@ -23,7 +23,7 @@ class JobLineItemTypeSearchResultsController: BaseJobLineItemTypesController {
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: BaseJobLineItemTypesController.tableViewCellIdentifier)!
+		let cell = tableView.dequeueReusableCell(withIdentifier: BaseJobLineItemTypesController.tableViewCellIdentifier, for: indexPath)
 		
 		let lineItemType = filteredJobLineItemTypes[indexPath.row]
 		configureCell(cell, forLineItemType: lineItemType)

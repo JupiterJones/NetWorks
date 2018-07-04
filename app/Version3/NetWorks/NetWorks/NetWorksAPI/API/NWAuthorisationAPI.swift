@@ -65,7 +65,10 @@ public class NWAuthorisationAPI : NWSyncBase {
 						
 						// Setup the keychain
 						api.authorisation().apiKey(uuid: apiKey!)
-					} else { completion(.failure(NSError(domain: <#T##String#>, code: <#T##Int#>, userInfo: <#T##[String : Any]?#>) ) }
+						completion(.success)
+					} else {
+						completion(.failure(NSError(domain: "No API Found", code: 1, userInfo: ["code":authCode]) ) )
+					}
 					
 				} else if let error = response.error {
 					XCGLogger.error("There has been an error. Running completion with error")

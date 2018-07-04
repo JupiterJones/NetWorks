@@ -1,12 +1,12 @@
-accessing
+descriptions
 jobLineItemTypeTitleAndComment
   ^ String
     streamContents: [ :stream | 
-      stream
-        nextPutAll:
-            (self jobLineItem
-                ifNotNil: [ :jobLineItem | jobLineItem lineItemType comment ]
-                ifNil: [ '<no job line item comment>' ]);
-        nextPutAll: ' (';
-        nextPutAll: self jobLineItem lineItemType title;
-        nextPutAll: ')' ]
+      self jobLineItem
+        ifNotNil: [ :jobLineItem | 
+          stream
+            nextPutAll: jobLineItem lineItemType comment;
+            nextPutAll: ' (';
+            nextPutAll: self jobLineItem lineItemType title;
+            nextPutAll: ')' ]
+        ifNil: [ stream nextPutAll: '<no job line item>' ] ]

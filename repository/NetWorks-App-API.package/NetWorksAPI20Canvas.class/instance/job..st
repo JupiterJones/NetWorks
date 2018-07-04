@@ -7,5 +7,6 @@ job: job
         key: 'title' value: job title;
         key: 'comment' value: job comment;
         key: 'location' value: [ self location: job location ];
+        key: 'jobType' value: [ self jobType: job jobType ];
         key: 'asset' value: job asset;
         key: 'uri' value: job uri ]

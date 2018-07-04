@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="NWClient" representedClassName="NWClient" syncable="YES" codeGenerationType="class">
         <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
@@ -17,6 +17,7 @@
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uri" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="jobType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWJobType" syncable="YES"/>
         <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWLocation" inverseName="job" inverseEntity="NWLocation" syncable="YES"/>
         <relationship name="workOrders" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NWWorkOrder" inverseName="job" inverseEntity="NWWorkOrder" syncable="YES"/>
     </entity>
@@ -107,7 +108,7 @@
     <elements>
         <element name="NWClient" positionX="-8660" positionY="-4311" width="128" height="120"/>
         <element name="NWDefaults" positionX="-8451" positionY="-4158" width="128" height="75"/>
-        <element name="NWJob" positionX="-8469" positionY="-3942" width="128" height="150"/>
+        <element name="NWJob" positionX="-8469" positionY="-3942" width="128" height="165"/>
         <element name="NWJobLineItem" positionX="-8102" positionY="-4243" width="128" height="105"/>
         <element name="NWJobLineItemType" positionX="-7922" positionY="-4293" width="128" height="135"/>
         <element name="NWJobType" positionX="-8451" positionY="-4158" width="128" height="105"/>

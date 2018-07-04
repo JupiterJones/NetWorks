@@ -199,6 +199,7 @@ class JobLineItemTypesController: BaseJobLineItemTypesController, UISearchBarDel
     }
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		// Are we selecting the base table or the search results??????
 		let lineItemType = jobLineItemTypes[indexPath.row]
 		log.verbose("LineItemType selected: \(String(describing: lineItemType.title))")
 		jobLineItem?.lineItemType = lineItemType
@@ -214,7 +215,7 @@ class JobLineItemTypesController: BaseJobLineItemTypesController, UISearchBarDel
 		api.jobTypesApi().sync() { result in
 			switch result {
 			case .success:
-				self.jobLineItemTypes = self.jobLineItem?.lineItemType?.jobType?.lineItemTypes?.allObjects as! [NWJobLineItemType]
+				self.jobLineItemTypes = self.job?.jobType?.lineItemTypes?.allObjects as! [NWJobLineItemType]
 				self.tableView.reloadData()
 			case .failure(let error):
 				print(error)

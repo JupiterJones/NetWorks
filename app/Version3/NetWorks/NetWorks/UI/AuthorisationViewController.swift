@@ -43,7 +43,8 @@ class AuthorisationViewController: UIViewController {
 			switch result {
 			case .success:
 				log.verbose("got api key")
-				self.navigationController?.popViewController(animated: true)
+				self.dismiss(animated: true, completion: {} )
+				//self.navigationController?.popViewController(animated: true)
 				log.verbose("Popped View Controller")
 			case .failure(let error):
 				log.verbose("no api key found")
